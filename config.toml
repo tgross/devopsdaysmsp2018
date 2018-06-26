@@ -1,0 +1,12 @@
+#baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "They Didn't Stop To Think If They Should"
+theme = "reveal-hugo"
+
+[params.reveal_hugo]
+theme = "beige"
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
