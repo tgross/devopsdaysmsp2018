@@ -1,6 +1,6 @@
 <!doctype html><html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.42.1" />
+	<meta name="generator" content="Hugo 0.42.2" />
     <meta charset="utf-8">
     <title>DevOps Days MSP 2018</title>
     <meta name="description" content="">
@@ -8,22 +8,22 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+    <link rel="stylesheet" href="./css/reveal.min.css">
     
     
     
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/moon.css" id="theme">
+    <link rel="stylesheet" href="/css/devopsdays.css" id="theme">
     
     
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="./styles/solarized-dark.min.css">
     
     <script>
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.6.0/css/print/pdf.css' : 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.6.0/css/print/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? './css/print/pdf.css' : './css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
     
@@ -38,236 +38,492 @@
     <section>
               
 
-<h2 id="they-didn-t-stop-to-think-if-they-should-machine-learning-and-the-internet-of-unpatched-things">They Didn&rsquo;t Stop To Think If They Should: Machine Learning And The Internet Of Unpatched Things</h2>
+<h1 id="they-didn-t-stop-to-think-if-they-should">They Didn&rsquo;t Stop To Think If They Should</h1>
 
-<h3 id="tim-gross">Tim Gross</h3>
-
-<h4 id="machinist-labs-0x74696d">Machinist Labs | @0x74696d</h4>
+<h4 id="tim-gross-machinist-labs-0x74696d">Tim Gross | Machinist Labs | @0x74696d</h4>
 
 
             </section>
           <section>
               
 
-<p>(image of &ldquo;NTSB self-driving Uber did not have emergency braking turned on&rdquo;)</p>
+<h2 id="or">or&hellip;</h2>
 
-<aside class="notes"><p><a href="https://www.washingtonpost.com/news/dr-gridlock/wp/2018/05/24/ntsb-self-driving-uber-did-not-have-emergency-braking-turned-on/?noredirect=on&amp;utm_term=.51fd3210a68e">https://www.washingtonpost.com/news/dr-gridlock/wp/2018/05/24/ntsb-self-driving-uber-did-not-have-emergency-braking-turned-on/?noredirect=on&amp;utm_term=.51fd3210a68e</a>
-<aside class="notes">
+<h2 id="machine-learning-and-the-internet-of-unpatched-things">Machine Learning And The Internet Of Unpatched Things</h2>
+
+<aside class="notes"><p>an alternate title could be&hellip;</p>
+</aside>
+
+
             </section>
           <section>
-              </p>
+              
 
-<p>(image of &ldquo;Twitter taught Microsoft&rsquo;s AI chatbot to be a racist asshole in less than a day&rdquo;)</p>
+<h2 id="or-1">or&hellip;</h2>
 
-<aside class="notes"><p><a href="https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist">https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist</a>
-<aside class="notes">
+<h2 id="because-eternal-vigilance-is-the-price-of-liberty-we-have-to-talk-about-ethics-again">Because Eternal Vigilance is the Price of Liberty, We Have to Talk About Ethics Again</h2>
+
+
             </section>
           <section>
-              </p>
+              
 
-<p>(image of &ldquo;NHS hospitals randomware hack wannacry&rdquo;)</p>
+<blockquote>
+<p>We&rsquo;ve updated our privacy policy!</p>
 
-<aside class="notes"><p><a href="https://www.theverge.com/2017/5/12/15630354/nhs-hospitals-ransomware-hack-wannacry-bitcoin">https://www.theverge.com/2017/5/12/15630354/nhs-hospitals-ransomware-hack-wannacry-bitcoin</a>
-<aside class="notes">
+<p>The opinions expressed in this talk are the speaker&rsquo;s alone and do not reflect the view of this conference, your employer, or my mom. Any reference to or citation of any person or organization does not constitute or imply an endorsement or recommendation of the content of this talk. The speaker is grossly unqualified to tell you how to live you life. Your mileage may vary. Not to be used in the manufacture of nuclear weapons. By attending this talk the speaker hereby grants you an irrevocable, perpetual, non-exlusive, tranferable, worldwide license to be excellent to each other.</p>
+</blockquote>
+
+<aside class="notes"><p>why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special?</p>
+</aside>
+
+
             </section>
           <section>
-              </p>
+              
 
-<p>(image of &ldquo;Tesla car that crashed and killed driver was running on Autopilot, firm says&rdquo;)</p>
+<p><img src="img/uber-accident.png" alt="uber-self-driving" /></p>
 
-<aside class="notes"><p><a href="https://www.theguardian.com/technology/2018/mar/31/tesla-car-crash-autopilot-mountain-view">https://www.theguardian.com/technology/2018/mar/31/tesla-car-crash-autopilot-mountain-view</a>
-<aside class="notes">
+<p><em><a href="https://www.washingtonpost.com/news/dr-gridlock/wp/2018/05/24/ntsb-self-driving-uber-did-not-have-emergency-braking-turned-on/">Michael Laris, Washington Post, 24 May 2018</a></em></p>
+
+<aside class="notes"><p>Back in March a self-driving car operated by Uber killed a pedestrian</p>
+</aside>
+
+
             </section>
           <section>
-              </p>
+              
 
-<p>(image of &ldquo;how target figured out teen girl was pregnant&rdquo;)</p>
+<p><img src="img/microsoft-chatbot.png" alt="microsoft-chatbot" /></p>
 
-<aside class="notes"><p><a href="https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/#5e6d24926668">https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/#5e6d24926668</a>
-<aside class="notes">
+<p><em><a href="https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist">James Vincent, The Verge, 24 Mar 2016</a></em></p>
+
+<aside class="notes"><p>MSFT embarrassed itself with the Tay chatbot a couple years ago</p>
+</aside>
+
+
             </section>
           <section>
-              </p>
+              
 
-<p>(image of &ldquo;Google sorry for racist auto tag photo app&rdquo;)</p>
+<p><img src="img/uk-ransomware.png" alt="uk-ransomware" /></p>
 
-<aside class="notes"><p><a href="https://www.theguardian.com/technology/2015/jul/01/google-sorry-racist-auto-tag-photo-app">https://www.theguardian.com/technology/2015/jul/01/google-sorry-racist-auto-tag-photo-app</a>
-<a href="https://www.theguardian.com/technology/2015/may/20/flickr-complaints-offensive-auto-tagging-photos">https://www.theguardian.com/technology/2015/may/20/flickr-complaints-offensive-auto-tagging-photos</a>
-<aside class="notes">
+<p><em><a href="https://www.theverge.com/2017/5/12/15630354/nhs-hospitals-ransomware-hack-wannacry-bitcoin">Russell Brandom, The Verge, 12 May 2017</a></em></p>
+
+<aside class="notes"><p>last year countless devices in UK hospitals were taken over by Wannacry ransomeware, putting patient lives at risk</p>
+</aside>
+
+
             </section>
           <section>
-              </p>
+              
 
-<p>(image of &ldquo;defeat the baby&rdquo;)</p>
+<p><img src="img/tesla-autopilot.png" alt="tesla-autopilot" /></p>
 
-<aside class="notes"><p><a href="https://twitter.com/yipe/status/1005555741153902592">https://twitter.com/yipe/status/1005555741153902592</a>
-<aside class="notes">
+<p><em><a href="https://www.theguardian.com/technology/2018/mar/31/tesla-car-crash-autopilot-mountain-view">The Guardian, 31 Mar 2018</a></em></p>
+
+<aside class="notes"><p>Tesla&rsquo;s autopilot has been implicated in the deaths of several drivers at this point</p>
+</aside>
+
+
             </section>
           <section>
-              </p>
+              
 
-<p>(image of alexa eavesdropping)</p>
+<p><img src="img/target-pregnant.png" alt="target-pregnant" /></p>
 
-<aside class="notes"><p><a href="https://www.wsj.com/articles/amazon-alexa-powered-device-recorded-and-shared-users-conversation-without-permission-1527203250~">https://www.wsj.com/articles/amazon-alexa-powered-device-recorded-and-shared-users-conversation-without-permission-1527203250~</a></p>
+<p><em><a href="https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/">Kashmir Hill, Forbes, 16 Feb 2012</a></em></p>
 
-<p><a href="https://www.huffingtonpost.com/entry/alexa-eavesdropping-portland-familiy_us_5b0727cae4b0fdb2aa51b23e">https://www.huffingtonpost.com/entry/alexa-eavesdropping-portland-familiy_us_5b0727cae4b0fdb2aa51b23e</a>
-<aside class="notes">
+<aside class="notes"><p>Machine learning algorithms may know more about us and our loved ones than we do ourselves&hellip;</p>
+</aside>
+
+
             </section>
           <section>
-              </p>
+              
 
-<h2 id="machine-learning-and-iot-as-a-problem-of-scale">Machine Learning and IoT as a problem of scale:</h2>
+<p><img src="img/google-racist-autotag.png" alt="google-racist-autotag" /></p>
+
+<p><em><a href="https://www.theguardian.com/technology/2015/jul/01/google-sorry-racist-auto-tag-photo-app">Jana Kasperkevic, The Guardian, 1 Jul 2015</a></em></p>
+
+<aside class="notes"><p>&hellip; while simultaneously unconsciously encoding our biases</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/defeat-the-baby.png" alt="defeat-the-baby" /></p>
+
+<p><em><a href="https://twitter.com/yipe/status/1005555741153902592">https://twitter.com/yipe/status/1005555741153902592</a></em></p>
+
+<aside class="notes"><p>we&rsquo;ve invited these systems into our homes&hellip;</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/alexa-eavesdropping.png" alt="alexa-eavesdropping" /></p>
+
+<p><em><a href="https://www.huffingtonpost.com/entry/alexa-eavesdropping-portland-familiy_us_5b0727cae4b0fdb2aa51b23e">Laura Stevens, Huffington Post, 24 May 2018</a></em></p>
+
+<aside class="notes"><p>&hellip; with almost no oversight into what they&rsquo;re doing</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/marco-rogers.png" alt="marco" /></p>
+
+<aside class="notes"><p>and at the end of the day, it&rsquo;s people in our industry &ndash; the people in this room &ndash; who are the ones who execute it.</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="a-problem-of-scale">a problem of scale</h1>
+
+<aside class="notes"><p>the problem we have here is not just that these systems all have serious real-world consequences; we can look at the Therac-25 accidents in the 80&rsquo;s for examples of that.
+the problem is that those consequences are multiplied by the scale of these systems</p>
+</aside>
+
+
+            </section>
+          <section>
+              
 
 <h2 id="quantity-has-its-own-quality">quantity has its own quality</h2>
 
-<aside class="notes"><p>these are the speaker notes
-<aside class="notes">
-            </section>
-          <section>
-              </p>
-
-<ul>
-<li>scope is so large that creating meaningful consent is difficult</li>
-<li>ex. while ML &ldquo;models&rdquo; are probably reasonably well-understood by the elite developers of the best organizations, most users of ML treat the models as binary blobs &ndash; a black box into which numbers go and decisions come out</li>
-</ul>
-
-<p><a href="https://www.theatlantic.com/technology/archive/2013/10/avoid-facial-detection-algorithms-with-a-t-shirt/280253/">https://www.theatlantic.com/technology/archive/2013/10/avoid-facial-detection-algorithms-with-a-t-shirt/280253/</a></p>
-
-<p><a href="https://cdn.vox-cdn.com/uploads/chorus_asset/file/9969109/Screen_Shot_2018_01_03_at_3.05.16_PM.png">https://cdn.vox-cdn.com/uploads/chorus_asset/file/9969109/Screen_Shot_2018_01_03_at_3.05.16_PM.png</a></p>
-
-<p><a href="https://www.theverge.com/2018/1/3/16844842/ai-computer-vision-trick-adversarial-patches-google">https://www.theverge.com/2018/1/3/16844842/ai-computer-vision-trick-adversarial-patches-google</a></p>
-
-<p><a href="https://www.theverge.com/2016/11/3/13507542/facial-recognition-glasses-trick-impersonate-fool">https://www.theverge.com/2016/11/3/13507542/facial-recognition-glasses-trick-impersonate-fool</a></p>
+<aside class="notes"><p>a huge part of the value proposition of IoT and ML is the
+scale of the data involved: collecting massive amounts of data
+from edge computing devices, and processing massive amounts of
+data in ML models.</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<p><a href="https://thenewstack.io/camouflaged-graffiti-road-signs-can-fool-machine-learning-models/">https://thenewstack.io/camouflaged-graffiti-road-signs-can-fool-machine-learning-models/</a></p>
+<h2 id="no-meaningfully-informed-consent">no meaningfully informed consent</h2>
+
+<aside class="notes"><p>but the scope of machine learning and IoT is incomprensible to
+ordinary users; creating informed and meaningful consent is all
+but impossible</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/machine-learning-tech-debt.png" alt="machine-learning-tech-debt" /></p>
+
+<p><em><a href="https://ai.google/research/pubs/pub43146">https://ai.google/research/pubs/pub43146</a></em></p>
+
+<aside class="notes"><p>while ML &ldquo;models&rdquo; are probably reasonably well-understood by the elite developers of the best organizations, most users of ML treat the models as binary blobs &ndash; a black d a simple neural network in 9 lines of Python code
+work to Play FlappyBird
+JULY 10, 2016</p>
+
+<p>200 lines of python code to demonstrate DQN with Keras</p>
+
+<p>box into which numbers go and decisions come out. &ldquo;in 100 lines of Python&rdquo;</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/in_X_lines_01.png" alt="in_X_lines" />
+<span class='fragment '
+  >
+  <img src="img/in_X_lines_02.png" alt="in_X_lines" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/in_X_lines_03.png" alt="in_X_lines" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/in_X_lines_04.png" alt="in_X_lines" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/in_X_lines_05.png" alt="in_X_lines" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/in_X_lines_06.png" alt="in_X_lines" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/in_X_lines_07.png" alt="in_X_lines" />
+</span></p>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/ugly-t-shirt.jpg" alt="ugly-t-shirt" /></p>
+
+<p><em><a href="https://www.theatlantic.com/technology/archive/2013/10/avoid-facial-detection-algorithms-with-a-t-shirt/280253/">Robison Meyer, The Atlantic, 3 Oct 2013</a></em></p>
+
+<aside class="notes"><p>the consequences of this are open-ended.
+when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/face-recognition-glasses.png" alt="face-recognition-glasses" /></p>
+
+<p><em><a href="https://www.theverge.com/2016/11/3/13507542/facial-recognition-glasses-trick-impersonate-fool">James Vincent, The Verge, 3 Nov 2016</a></em></p>
+
+<aside class="notes"><p>or face-recognition fooling glasses to mislead systems not simply to protect their own identity but to summon a SWAT team in hopes of an &ldquo;accident&rdquo;, do the systems bear any responsibility?</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/adversarial-toaster.png" alt="adversarial-toaster" /></p>
+
+<p><em><a href="https://www.theverge.com/2018/1/3/16844842/ai-computer-vision-trick-adversarial-patches-google">James Vincent, The Verge, 3 Jan 2018</a></em></p>
+
+<aside class="notes"><p>or when a banana looks, not like a toaster, but a bomb or weapon?</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/road-signs.png" alt="road-signs" /></p>
+
+<p><em><a href="https://thenewstack.io/camouflaged-graffiti-road-signs-can-fool-machine-learning-models/">Kimberly Mok, The New Stack, 14 Sep 2017</a></em></p>
+
+<aside class="notes"><p>the flaws of self-driving vehicles and the organizations operating them seem terrifying enough without adding adversarial environments into the mix</p>
+</aside>
+
+
+            </section>
+          <section>
+              
 
 <blockquote>
 <p>The team found that with this approach, they were able to confuse a machine 100 percent of the time into classifying a stop sign as a 45-mile-per-hour speed limit sign, and a right-turn sign as a stop sign.</p>
 </blockquote>
 
-
-            </section>
-          <section>
-              
-
-<p>ex. IoT &ldquo;secure boot&rdquo; is typically considered optional (without which <em>any</em> device can be rooted)</p>
+<p><em><a href="https://thenewstack.io/camouflaged-graffiti-road-signs-can-fool-machine-learning-models/">Kimberly Mok, The New Stack, 14 Sep 2017</a></em></p>
 
 
             </section>
           <section>
               
 
-<p><a href="http://www.eclipse.org/hawkbit/documentation/images/hawkbit_logo.png">http://www.eclipse.org/hawkbit/documentation/images/hawkbit_logo.png</a></p>
+<h2 id="embedded-industry-stuck-in-archaic-threat-model">embedded industry stuck in archaic threat model</h2>
 
-<p><a href="https://m.media-amazon.com/images/G/01/DeveloperBlogs/AmazonDeveloperBlogs/legacy/AWS_IoT23._CB520207442_.png">https://m.media-amazon.com/images/G/01/DeveloperBlogs/AmazonDeveloperBlogs/legacy/AWS_IoT23._CB520207442_.png</a></p>
-
-<ul>
-<li>ex. existing solutions for IoT Over-the-Air updates (OTA) are mostly research projects at best (ex. Hawkbit) or require trust delegation and put secure boot at risk</li>
-</ul>
-
-
-            </section>
-          <section>
-              
-
-<h2 id="industry-abdication-of-responsibility-invites-political-and-legal-remedy">Industry abdication of responsibility invites political and legal remedy</h2>
+<aside class="notes"><p>if you thought the enterprise was bad&hellip;
+- still shipping devices with private keys and hard-coded passwords
+- &ldquo;secure boot&rdquo; (without which any device can be rooted) is an expensive add-on rather than the default</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<p><a href="https://www.brookings.edu/wp-content/uploads/2016/06/congress006-1.jpg">https://www.brookings.edu/wp-content/uploads/2016/06/congress006-1.jpg</a></p>
+<p><img src="img/hawkbit-logo.png" alt="hawkbit" /></p>
 
-<aside class="notes"><p>legal remedy is likely to be ham-fisted&hellip;
-<aside class="notes">
-            </section>
-          <section>
-              </p>
+<p><em><a href="http://www.eclipse.org/hawkbit/">http://www.eclipse.org/hawkbit/</a></em></p>
 
-<p><a href="https://imgur.com/gallery/2mIObIu">https://imgur.com/gallery/2mIObIu</a></p>
-
-<aside class="notes"><p>&hellip;particularly here in the US where almost all our lawmakers are incompetent&hellip;
-<aside class="notes">
-            </section>
-          <section>
-              </p>
-
-<p><a href="https://www.engadget.com/2017/05/18/fcc-chairman-net-neutrality-1996/">https://www.engadget.com/2017/05/18/fcc-chairman-net-neutrality-1996/</a></p>
-
-<aside class="notes"><p>&hellip; or are entirely co-opted by hostile interests
-    <aside class="notes">
-            </section>
-          <section>
-              </p>
-
-<p>software is typically sold w/o warantee for fitness for any particular use; this could change &ndash;&gt; do you want to be <em>personally liable</em> for bugs in your code?!</p>
+<aside class="notes"><p>existing solutions for IoT Over-the-Air updates (OTA) are mostly research projects at best (ex. Hawkbit)&hellip;</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<p>GPL:</p>
+<p><img src="img/aws-iot.png" alt="aws-iot" /></p>
+
+<p><em><a href="https://developer.amazon.com/de/blogs/post/Tx3828JHC7O9GZ9/Using-Alexa-Skills-Kit-and-AWS-IoT-to-Voice-Control-Connected-Devices">Robert McCauley, Alexa Blogs, 3 May 2016</a></em></p>
+
+<aside class="notes"><p>&hellip; or require trust delegation and put secure boot at risk</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h2 id="our-abdication-of-responsibility-invites-political-remedy">Our abdication of responsibility invites political remedy</h2>
+
+<aside class="notes"><p>the problem with out complacency on this as an industry is that it invites someone to &ldquo;do something&rdquo; about it.</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/congress.jpg" alt="congress" /></p>
+
+<p><em><a href="https://www.brookings.edu/wp-content/uploads/2016/06/congress006-1.jpg">https://www.brookings.edu/wp-content/uploads/2016/06/congress006-1.jpg</a></em></p>
+
+<aside class="notes"><p>legal remedy is likely to be ham-fisted&hellip;</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h2 id="we-have-to-do-something">&ldquo;We have to do something!&rdquo;</h2>
+
+<h2 id="this-is-something">&ldquo;This is something&rdquo;</h2>
+
+<h2 id="we-must-do-this">&ldquo;We must do this!&rdquo;</h2>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/series-of-tubes.png" alt="series-of-tubes" /></p>
+
+<p><em><a href="https://imgur.com/gallery/2mIObIu">https://imgur.com/gallery/2mIObIu</a></em></p>
+
+<aside class="notes"><p>&hellip; particularly here in the US where almost all our lawmakers are incompetent&hellip;</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/ajit-pai.png" alt="ajit-pai" /></p>
+
+<p><em><a href="https://www.engadget.com/2017/05/18/fcc-chairman-net-neutrality-1996/">Terrence O&rsquo;Brien, engadget, 18 May 2017</a></em></p>
+
+<aside class="notes"><p>&hellip; or are entirely co-opted by hostile interests</p>
+</aside>
+
+
+            </section>
+          <section>
+              
 
 <blockquote>
-<ol>
-<li><p>Disclaimer of Warranty.
-THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</p></li>
-
-<li><p>Limitation of Liability.
-IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p></li>
-</ol>
+<p>Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an &ldquo;AS IS&rdquo; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.</p>
 </blockquote>
+
+<p><em><a href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a></em></p>
+
+<aside class="notes"><p>this is the Apache license but other OSS licenses are similar, as are most EULAs.
+software is typically sold w/o warantee for fitness for any particular use; this could change</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<p>Apache:</p>
+<h2 id="do-you-want-to-be-personally-liable-for-bugs-in-your-code">Do you want to be personally liable for bugs in your code?</h2>
+
+<aside class="notes"><p>everyone here want to carry malpractice insurance?</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/gdpr-block.png" alt="gdpr-block" /></p>
+
+<p><em><a href="https://apility.io/2018/05/25/gdpr-lazy-block-european-users-cloudflare-workers/">https://apility.io/2018/05/25/gdpr-lazy-block-european-users-cloudflare-workers/</a></em></p>
+
+<aside class="notes"><p>the childishness and utter lack of professionalism we&rsquo;ve seen with GDPR</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/gdpr-hackernews.png" alt="gdpr-hackernews" /></p>
+
+<p><em><a href="https://news.ycombinator.com/item?id=16954306">https://news.ycombinator.com/item?id=16954306</a></em></p>
+
+<aside class="notes"><p>aw, poor baby!</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/gdpr-internet-of-shit.png" alt="gdpr-internet-of-shit" /></p>
+
+<p><em><a href="https://twitter.com/internetofshit/status/999619364541394944">https://twitter.com/internetofshit/status/999619364541394944</a></em></p>
+
+<aside class="notes"><p>on the other hand, if this is what organizations are doing&hellip;</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/gdpr-unrollme.png" alt="gdpr-unrollme" /></p>
+
+<p><em><a href="https://techcrunch.com/2018/05/05/unroll-me-to-close-to-eu-users-saying-it-cant-comply-with-gdpr/">Natasha Lomas, Tech Crunch, 5 May 2018</a></em></p>
+
+<aside class="notes"><p>&hellip;then it&rsquo;s all working as intended!</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="feature-not-bug">feature, not bug</h1>
+
+
+            </section>
+          <section>
+              
 
 <blockquote>
-<ol>
-<li><p>Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an &ldquo;AS IS&rdquo; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.</p></li>
-
-<li><p>Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.</p></li>
-
-<li><p>Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.</p></li>
-</ol>
-</blockquote>
-
-
-            </section>
-          <section>
-              
-
-<p>(GDPR childishness)
-<a href="https://apility.io/2018/05/25/gdpr-lazy-block-european-users-cloudflare-workers/">https://apility.io/2018/05/25/gdpr-lazy-block-european-users-cloudflare-workers/</a></p>
-
-<p><a href="https://twitter.com/internetofshit/status/999619364541394944">https://twitter.com/internetofshit/status/999619364541394944</a></p>
-
-<p><a href="https://techcrunch.com/2018/05/05/unroll-me-to-close-to-eu-users-saying-it-cant-comply-with-gdpr/">https://techcrunch.com/2018/05/05/unroll-me-to-close-to-eu-users-saying-it-cant-comply-with-gdpr/</a></p>
-
-<p><a href="https://news.ycombinator.com/item?id=16954306">https://news.ycombinator.com/item?id=16954306</a></p>
-
-
-            </section>
-          <section>
-              
-
-<p>Salesforce CEO Marc Benioff thinks America needs &ldquo;a national privacy law&hellip; that probably looks a lot like GDPR.&rdquo;</p>
+<p>Salesforce CEO Marc Benioff thinks America needs &ldquo;a national privacy law&hellip; that probably looks a lot like GDPR.</p>
 
 <p>&ldquo;This is going to help our industry&hellip; It&rsquo;s going to set the guardrails around trust, around safety. It&rsquo;s going to provide the ability for the customers to interact with great next generation technologies in a safe way.&rdquo;</p>
+</blockquote>
 
+<p><em><a href="https://www.theregister.co.uk/2018/05/30/salesforce_q1_2019/?">Simon Sharwood, The Register, 30 May 2018</a></em></p>
+
+
+            </section>
+          <section>
+              
+
+<blockquote>
 <p>Benioff went on to say that as artificial intelligence is used in customer service, &ldquo;that starts to cross the line on what is trust. And that&rsquo;s where our industry really has to come forward and say we&rsquo;re going to make sure that these technologies are trust-based. And I think the Europeans definitely got that figured out.&rdquo;</p>
+</blockquote>
 
-<p><a href="https://www.theregister.co.uk/2018/05/30/salesforce_q1_2019/?">https://www.theregister.co.uk/2018/05/30/salesforce_q1_2019/?</a></p>
+<p><em><a href="https://www.theregister.co.uk/2018/05/30/salesforce_q1_2019/?">Simon Sharwood, The Register, 30 May 2018</a></em></p>
 
 
             </section>
@@ -276,195 +532,476 @@ IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY C
 
 <h1 id="consent">Consent</h1>
 
+<aside class="notes"><p>consent is the <em>only</em> workable guiding model when we&rsquo;re talking about relationships between individual people. I consent to</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="individual-vs-community-consent">Individual vs Community Consent</h1>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/vaccines.jpg" alt="vaccines" /></p>
+
+<p><em><a href="http://www.startribune.com/sack-cartoon-vaccinations/289998831/">Steve Sack, Star Tribune, 27 Jan 2015</a></em></p>
+
+<aside class="notes"><p>every culture has different boundaries here.
+ex. in the EU they protect individual consent strongly&hellip;</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/kelo-vs-new-london.png" alt="kelo-house" /></p>
+
+<p><em><a href="https://www.washingtonpost.com/news/volokh-conspiracy/wp/2015/05/29/the-story-behind-the-kelo-case-how-an-obscure-takings-case-came-to-shock-the-conscience-of-the-nation/">Ilya Somin, Washington Post, 29 May 2015</a></em></p>
+
+<aside class="notes"><p>&hellip; whereas in the US we have a mixed bag where businesses get the power of community consent to override the will of individuals, but very little of the responsibility of individual consent.</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/externality-definition.png" alt="externality" /></p>
+
+<p><em><a href="https://www.google.com/search?q=externality">https://www.google.com/search?q=externality</a></em></p>
+
+<aside class="notes"><p>aside: are these results being manipulated? the <em>canonical</em> example is pollution!</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="values-vary">values vary</h1>
+
 <aside class="notes"><p>Flaws of the Consent Model as a Solution
-<aside class="notes">
-            </section>
-          <section>
-              </p>
-
-<p>individual consent vs community consent:
-&ndash; ex. eminent domain
-&ndash; externalities</p>
-
-<p><a href="https://img.washingtonpost.com/news/volokh-conspiracy/wp-content/uploads/sites/14/2015/05/Kelo-House-Frontal-view-same-as-cover-of-LPH-e1432877841421.jpg">https://img.washingtonpost.com/news/volokh-conspiracy/wp-content/uploads/sites/14/2015/05/Kelo-House-Frontal-view-same-as-cover-of-LPH-e1432877841421.jpg</a></p>
-
-<p><a href="https://www.washingtonpost.com/news/volokh-conspiracy/wp/2015/05/29/the-story-behind-the-kelo-case-how-an-obscure-takings-case-came-to-shock-the-conscience-of-the-nation/">https://www.washingtonpost.com/news/volokh-conspiracy/wp/2015/05/29/the-story-behind-the-kelo-case-how-an-obscure-takings-case-came-to-shock-the-conscience-of-the-nation/</a></p>
-
-
-            </section>
-          
-
-<section data-noprocess>
-  <h2>Externalities</h2>
-  <img src="../static/img/externality-definition.png" />
-https://www.google.com/search?q=externalities&oq=externalities&aqs=chrome..69i57.1923j0j1&sourceid=chrome&ie=UTF-8
-
-</section>
-
-<aside class="notes"><p>aside: are these results being manipulated? the <em>canonical</em> example is pollution!
-<aside class="notes"><section>
-              </p>
-
-<ul>
-<li>ethical definitions vary b/c values vary (ex. balance of community vs individual consent varies significantly between Europe and the US)</li>
-</ul>
+- ethical definitions vary b/c values vary (ex. balance of community vs individual consent varies significantly between Europe and the US)
+- how do other professions solve this problem&hellip;?</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<p><a href="https://twitter.com/Millstab/status/999762424994594817">https://twitter.com/Millstab/status/999762424994594817</a></p>
+<p><img src="img/sonia-1.png" alt="sonia-1" /></p>
+
+<p><em><a href="https://twitter.com/soniagupta504/status/1011591288003575808">https://twitter.com/soniagupta504/status/1011591288003575808</a></em></p>
+
+<aside class="notes"><p>Sonia (who was up here on stage last night):
+&ldquo;Lawyers and doctors enter their professions knowing, from the outset, just how heavy  their burdens are. They hold human rights and life in their hands.&rdquo;</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<h1 id="flaws-of-professional-ethics-as-a-solution">Flaws of Professional Ethics as a Solution</h1>
+<p><img src="img/sonia-2.png" alt="sonia-2" /></p>
 
-<ul>
-<li>history of professional organizations (ex. AMA, AIA, ASME, bar associations)</li>
-<li>government licensing requirements are typically delegated to the professional organizations</li>
-<li>professional organizations mostly act to counter information asymmetry rather than create monopoloy power (ref <a href="http://www.nber.org/papers/w10467.pdf">http://www.nber.org/papers/w10467.pdf</a>), but&hellip;</li>
-<li>professional organizations inherently act against the direction we want to take our industry wrt inclusion, ability to bootstrap into the middle class</li>
+<p><em><a href="https://twitter.com/soniagupta504/status/1011591288003575808">https://twitter.com/soniagupta504/status/1011591288003575808</a></em></p>
+
+<aside class="notes"><p>highly impactful professions know that their limits must be more stringent</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h2 id="with-great-power-comes-great-responsibility">&ldquo;With great power comes great responsibility&rdquo;</h2>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="professional-ethics">professional ethics</h1>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="licensing-as">licensing as</h1>
+
+<h1 id="self-regulation">self-regulation</h1>
+
+<aside class="notes"><p>historically licensing and professional organizations (ex. AMA, AIA, ASME, bar associations) have arisen from the professions themselves rather than being imposed clumsily from the outside.
+government licensing requirements are typically delegated to the professional organizations</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="licensing-requires-monopoly">licensing requires monopoly</h1>
+
+<aside class="notes"><ul>
 <li>professional certification w/o regulation or consequences is toothless and worthless (ex. CompTIA or ICS^2 or Project Management Institute)</li>
 <li>professional organizations ethical requirements are typically about fair dealing and bare minimum safety guidelines</li>
 </ul>
+</aside>
 
 
             </section>
           <section>
               
 
-<ul>
-<li>an advantage of a professional organization&rsquo;s ethical framework is that it at least gives a shared baseline: right now we&rsquo;re all trying to figure this out for ourselves.</li>
-<li>we should hold each other to task</li>
-<li>we should also cut each other some slack (e.g. ensure your own mask is secure before helping others)</li>
-</ul>
+<blockquote>
+<p>We do not believe that it is merely a coincidence that the entry and standards of practice are most strictly regulated for physicians, dentists, and veterinarians&hellip; where the costs of receiving poor services could be high or sometimes even catastrophic.</p>
+</blockquote>
+
+<p><em><a href="http://www.nber.org/papers/w10467.pdf">ref http://www.nber.org/papers/w10467.pdf</a></em></p>
+
+<aside class="notes"><p>study by Marc Law &amp; Sukkoo Kim of National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information assymmetry rather than creating monopoly power&hellip;</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<ol>
-<li>what can be done? individual action:</li>
-</ol>
+<h1 id="gatekeeping">gatekeeping</h1>
 
-<ul>
-<li>influence the community</li>
-<li>ex. talk about this stuff!</li>
-<li>ex. what organizations do we work for?</li>
-</ul>
+<aside class="notes"><p>&hellip; so in other words they serve as gatekeepers.
+well, that&rsquo;s a little problematic isn&rsquo;t it? currently our barriers to entry are <em>relatively</em> low relative to other professions that provide the ability to bootstrap into the middle class. (although we still have a <em>lot</em> of work to do!) so adding gatekeeping mechanisms seems like it&rsquo;d work against the direction with want to take our industry wrt inclusion</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<ul>
-<li>influence the organization:</li>
-<li>ex. Google employees protest of military contracts</li>
-<li>ex. Microsoft employees protest of ICE contracts</li>
-<li>ex. D&amp;I efforts</li>
-<li>ex. hiring practices</li>
-</ul>
+<h1 id="shared-ethical-baseline">shared ethical baseline</h1>
 
-<p><a href="https://arstechnica.com/tech-policy/2018/06/microsoft-staff-call-on-company-to-end-ice-contract/">https://arstechnica.com/tech-policy/2018/06/microsoft-staff-call-on-company-to-end-ice-contract/</a></p>
-
-<p><a href="https://www.reuters.com/article/uk-alphabet-defense/google-to-scrub-u-s-military-deal-protested-by-employees-source-idUKKCN1IX5YC">https://www.reuters.com/article/uk-alphabet-defense/google-to-scrub-u-s-military-deal-protested-by-employees-source-idUKKCN1IX5YC</a></p>
-
-<p><a href="https://gizmodo.com/amazon-workers-demand-jeff-bezos-cancel-face-recognitio-1827037509">https://gizmodo.com/amazon-workers-demand-jeff-bezos-cancel-face-recognitio-1827037509</a></p>
+<aside class="notes"><p>but an advantage of a professional organization&rsquo;s ethical framework is that it at least gives a shared baseline: right now we&rsquo;re all trying to figure this out for ourselves.
+we should hold each other to task</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<ul>
-<li>direct action at an engineering level:</li>
-<li>ex. immutable event data storage</li>
-<li>ex. dark UX patterns</li>
-<li>ex. choosing model inputs that reflect the population</li>
-</ul>
+<h1 id="what-is-to-be-done">what is to be done?</h1>
+
+<aside class="notes"><p>waiting for &ldquo;the industry&rdquo; to fix it isn&rsquo;t working.
+we all, individually, are the industry. need to take individual action:
+- influence the community
+- ex. talk about this stuff!
+- ex. what organizations do we work for?</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<ul>
-<li>ex. secure-by-default; bypass business analysts opinions that are purely technical; &ldquo;no one was ever fired for using best practices&rdquo; &ndash;&gt; these things typically don&rsquo;t make it into a JIRA story on their own; you&rsquo;re a professional, act like it!</li>
-</ul>
+<p><img src="img/microsoft-employees-ice.png" alt="microsoft-employees-ice" /></p>
+
+<p><em><a href="https://arstechnica.com/tech-policy/2018/06/microsoft-staff-call-on-company-to-end-ice-contract/">Peter Bright, Ars Technica, 20 Jun 2018</a></em></p>
+
+<aside class="notes"><p>influence the organization
+we see Microsoft employees pushing for change in what customers their organization serves</p>
+</aside>
 
 
             </section>
           <section>
               
 
-<ul>
+<p><img src="img/google-employees-military.png" alt="google-employees-military" /></p>
+
+<p><em><a href="https://www.reuters.com/article/uk-alphabet-defense/google-to-scrub-u-s-military-deal-protested-by-employees-source-idUKKCN1IX5YC">Paresh Dave and Heather Somerville, Reuters, 1 Jun 2018</a></em></p>
+
+<aside class="notes"><p>we&rsquo;ve seen successful protest by Googlers motivated by their conscience</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/amazon-employees-law-enforcement.png" alt="amazon-employees-law-enforcement" /></p>
+
+<p><em><a href="https://gizmodo.com/amazon-workers-demand-jeff-bezos-cancel-face-recognitio-1827037509">Kate Conger, Gizmodo, 21 Jun 2018</a></em></p>
+
+<aside class="notes"><p>and we&rsquo;ve seen Amazon employees pushing for change</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="what-about">what about&hellip;?</h1>
+
+<aside class="notes"><p>&ldquo;whataboutism&rdquo;: because &ldquo;values vary&rdquo; it isn&rsquo;t constructive to see e.g. Microsoftees protesting ICE but then turn around and say &ldquo;what about their military contracts?&rdquo; or &ldquo;what about that time when MSFT&rsquo;s CEO from 17 years ago said meanie-head things about open source?&rdquo; This is not helpful.</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="who-s-hiring">Who&rsquo;s hiring?</h1>
+
+<aside class="notes"><p>the labor market for our profession gives us enormous power right now.
+- we can push hard for better hiring policies
+- we can push hard for D&amp;I efforts
+- we can push hard for our organizations to be better</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="ensure-your-own-mask-is-secure">ensure your own mask is secure</h1>
+
+<aside class="notes"><p>that being said, we should also cut each other some slack. you don&rsquo;t know much about the circumstances of any particular person. so while we should be holding each other to task, individuals need to make their own decisions about where they work and that doesn&rsquo;t make them The Enemy. (unless they work at Oracle, just sayin&rsquo;)</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="direct-action">direct action</h1>
+
+<aside class="notes"><p>what is available to everyone regardless of our work conditions, and perhaps more effective than anything else we can do, is direct action at an engineering level
+what choices do we make as technologists?</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<pre><code class="language-python">def should_brake(road):
+    if road.contains(object.HUMAN):
+        print(&quot;oh shit!&quot;)
+        # TODO: this is causing erratic driving on false
+        # positive detection. Uncomment this once we have
+        # that solved. Someone should remind the field
+        # engineers to tell the test drivers they need to
+        # pay attention to the road.
+        # return True
+    return False
+</code></pre>
+
+<aside class="notes"><p>we need to take responsibility for quality proportional to the risks involved with the software. while this is obvious in self-driving cars, we need to design-out unexpected behaviors in ML.</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/tumblr-gdpr.png" alt="gdpr-tumblr" /></p>
+
+<p><em><a href="https://twitter.com/Millstab/status/999762424994594817">https://twitter.com/Millstab/status/999762424994594817</a></em></p>
+
+<aside class="notes"><p>push back against dark UX patterns</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h2 id="immutable">Immutable?</h2>
+
+<p><img src="img/Kafka.png" alt="kafka" /></p>
+
+<p><a href="https://vision.cloudera.com/apache-kafka-a-platform-for-real-time-data-streams-part-1/">Jay Kreps, Cloudera, 11 June 2015</a></p>
+
+<aside class="notes"><p>many orgs are using immutable event stores</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h2 id="immutable-1">&ldquo;Immutable&rdquo;</h2>
+
+<p><img src="img/Kafka-per-user.png" alt="kafka" /></p>
+
+<aside class="notes"><p>&hellip; per user encryption keys can be used to allow immutable infrastructures that are compatible with the &ldquo;right to be forgotten&rdquo;</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="ml-models-are-state">ML models are state</h1>
+
+<aside class="notes"><p>speaking of immutability&hellip;
+our entire industry has unified around our worries about statefulness, but&hellip;
+ML is the ultimate stateful application
+the entire model is a side-effect, so you can&rsquo;t design-out side-channel attacks.</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="align-training-data-with-real-world-demographics">align training data with real world demographics</h1>
+
+<aside class="notes"><ul>
+<li>choosing ML model inputs that reflect the population</li>
 <li>align engineering ethics with business needs (ex. &ldquo;if we pick machine vision training data that reflects real demographics, we can avoid the embarassment for our organization of having to explain why our software acts racist.&rdquo;)</li>
+</ul>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="technical-leadership">technical leadership</h1>
+
+<aside class="notes"><ul>
 <li>we can&rsquo;t rely on project managers or business analysts to take the lead on designing our systems ethically because they simply may not understand the side-effects. you&rsquo;re the technical professional: they&rsquo;re expecting you to take the lead on this!</li>
 </ul>
+</aside>
 
 
             </section>
           <section>
               
 
-<p><p><a href="https://twitter.com/soniagupta504/status/1011591288003575808">https://twitter.com/soniagupta504/status/1011591288003575808</a></p>
-</aside></p>
+<h1 id="best-practice-is">&ldquo;best practice is&hellip;&rdquo;</h1>
+
+<aside class="notes"><p>&ldquo;the best thing about best practices is there are so many of them to choose from&rdquo;
+bypass business analysts and project managers on opinions that are purely technical</p>
 </aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span>
+<span class='fragment '
+  >
+  <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
+</span></p>
+
+<aside class="notes"><p>formal Agile methodologies contribute to the problem. &ldquo;act ethically&rdquo; doesn&rsquo;t have any story points in this epic.
+But you&rsquo;re supposed to be a professional, not a JIRA clock puncher. act like it!</p>
 </aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
-</aside>
+
+
+            </section>
+          <section>
+              
+
+<blockquote>
+<p>We aren&rsquo;t a craft anymore. We might feel like artisans with laptops but what we produce could potentially be in front of a significant chunk of the human race by lunchtime. We&rsquo;re not hand-crafting dovetail joints here.</p>
+</blockquote>
+
+<p><em><a href="https://www.theregister.co.uk/2018/03/01/ethics_yeah_thats_great_but_do_they_scale/">Anne Currie, The Register, 1 Mar 2018</a></em></p>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="let-s-get-to-work">let&rsquo;s get to work</h1>
 
             </section>
           
   </div>
 </div>
 
-    <script type="application/json" id="reveal-hugo-page-params">{"theme":"moon"}</script>
+
+    <script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"css/devopsdays.css","highlight_theme":"solarized-dark"}</script>
     <script type="application/json" id="reveal-hugo-site-params">{"theme":"beige"}</script>
     <script type="application/json" id="reveal-hugo-defaults">{"center":true,"controls":true,"highlight_theme":"default","history":true,"progress":true,"theme":"black","transition":"slide"}</script>
     <script type="text/javascript">
       window.revealHugoDependencies = {
         dependencies: [
-          { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.6.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.6.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.6.0/plugin/zoom-js/zoom.js', async: true },
+          { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: './plugin/zoom-js/zoom.js', async: true },
           
           { src: '\/reveal-hugo\/plugin\/notes\/notes.js', async: true }
       ]};
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+    <script src="./lib/js/head.min.js"></script>
+    <script src="./js/reveal.js"></script>
     <script type="text/javascript">
       
       
