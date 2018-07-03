@@ -42,7 +42,10 @@
 
 <h1 id="they-didn-t-stop-to-think-if-they-should">They Didn&rsquo;t Stop To Think If They Should</h1>
 
-<h4 id="tim-gross-machinist-labs-0x74696d">Tim Gross | Machinist Labs | @0x74696d</h4>
+<h4 id="tim-gross-machinist-labs">Tim Gross | Machinist Labs</h4>
+
+<aside class="notes"><p>My name is Tim Gross from Machinist Labs, and my talk is titled &ldquo;They Didn&rsquo;t Stop to Think If They Should&rdquo;</p>
+</aside>
 
 
             </section>
@@ -76,7 +79,7 @@
 <p>The opinions expressed in this talk are the speaker&rsquo;s alone and do not reflect the view of this conference, your employer, or my mom. Any reference to or citation of any person or organization does not constitute or imply an endorsement or recommendation of the content of this talk. The speaker is grossly unqualified to tell you how to live you life. Your mileage may vary. Not to be used in the manufacture of nuclear weapons. By attending this talk the speaker hereby grants you an irrevocable, perpetual, non-exlusive, tranferable, worldwide license to be excellent to each other.</p>
 </blockquote>
 
-<aside class="notes"><p>why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special?</p>
+<aside class="notes"><p>why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? Why do we as engineers even need to discuss this stuff? &ldquo;Ethics is hard!&rdquo;</p>
 </aside>
 
 
@@ -88,7 +91,7 @@
 
 <p><em><a href="https://www.washingtonpost.com/news/dr-gridlock/wp/2018/05/24/ntsb-self-driving-uber-did-not-have-emergency-braking-turned-on/">Michael Laris, Washington Post, 24 May 2018</a></em></p>
 
-<aside class="notes"><p>Back in March a self-driving car operated by Uber killed a pedestrian</p>
+<aside class="notes"><p>Back in March a self-driving car operated by Uber killed a pedestrian. The NTSB investigation is still ongoing, but what is clear is that the vehicle had no business being operated without direct supervision. The sensing system had lots of false positives that caused it to brake erratically. So they turned the braking system off. But apparently that message never got to the folks who&rsquo;d turned off the vehicles&rsquo; own automatic braking nor to the attendee of the vehicle. So the vehicle &ldquo;saw&rdquo; the pedestrian and did nothing.</p>
 </aside>
 
 
@@ -100,7 +103,7 @@
 
 <p><em><a href="https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist">James Vincent, The Verge, 24 Mar 2016</a></em></p>
 
-<aside class="notes"><p>MSFT embarrassed itself with the Tay chatbot a couple years ago</p>
+<aside class="notes"><p>A couple years ago, MSFT demonstrated their ML capabilities with the Tay chatbot. They let it loose to learn from whatever racist trolls wanted to teach it. The experiment was stopped and the whole debacle embarassed MSFT. Now clearly the horrible Internet people are primarily to blame here, but the researchers failed to anticipate the &ldquo;side channel&rdquo; attacks inherent to their system</p>
 </aside>
 
 
@@ -112,7 +115,7 @@
 
 <p><em><a href="https://www.theverge.com/2017/5/12/15630354/nhs-hospitals-ransomware-hack-wannacry-bitcoin">Russell Brandom, The Verge, 12 May 2017</a></em></p>
 
-<aside class="notes"><p>last year countless devices in UK hospitals were taken over by Wannacry ransomeware, putting patient lives at risk</p>
+<aside class="notes"><p>in an IoT example, last year countless devices in UK hospitals were taken over by Wannacry ransomware. patient lives were put at risk not just because of poor patch hygine but because of the design flaws that allowed access to the devices in the first place and because of warped incentives in the government programs that produced the stolen malware in the first place.</p>
 </aside>
 
 
@@ -124,7 +127,7 @@
 
 <p><em><a href="https://www.theguardian.com/technology/2018/mar/31/tesla-car-crash-autopilot-mountain-view">The Guardian, 31 Mar 2018</a></em></p>
 
-<aside class="notes"><p>Tesla&rsquo;s autopilot has been implicated in the deaths of several drivers at this point</p>
+<aside class="notes"><p>Tesla&rsquo;s autopilot has been implicated in the deaths of several drivers at this point. We (and Tesla stockholders, apparently) are constantly reassured that these are the result of improper handling and not rushing these systems into the real world before they&rsquo;re ready.</p>
 </aside>
 
 
@@ -148,7 +151,7 @@
 
 <p><em><a href="https://www.theguardian.com/technology/2015/jul/01/google-sorry-racist-auto-tag-photo-app">Jana Kasperkevic, The Guardian, 1 Jul 2015</a></em></p>
 
-<aside class="notes"><p>&hellip; while simultaneously unconsciously encoding our biases</p>
+<aside class="notes"><p>&hellip; while simultaneously unconsciously encoding our biases. (This one was so bad that I cropped it out of this picture.)</p>
 </aside>
 
 
@@ -160,7 +163,7 @@
 
 <p><em><a href="https://twitter.com/yipe/status/1005555741153902592">https://twitter.com/yipe/status/1005555741153902592</a></em></p>
 
-<aside class="notes"><p>we&rsquo;ve invited these systems into our homes&hellip;</p>
+<aside class="notes"><p>we&rsquo;ve invited these systems into our homes&hellip; (and ok, yeah this is funny)</p>
 </aside>
 
 
@@ -172,7 +175,7 @@
 
 <p><em><a href="https://www.huffingtonpost.com/entry/alexa-eavesdropping-portland-familiy_us_5b0727cae4b0fdb2aa51b23e">Laura Stevens, Huffington Post, 24 May 2018</a></em></p>
 
-<aside class="notes"><p>&hellip; with almost no oversight into what they&rsquo;re doing</p>
+<aside class="notes"><p>&hellip; with almost no oversight into what they&rsquo;re doing. We have unaccountable closed source microphones in our homes, who do who-knows-what with that information</p>
 </aside>
 
 
@@ -182,7 +185,7 @@
 
 <p><img src="img/marco-rogers.png" alt="marco" /></p>
 
-<aside class="notes"><p>and at the end of the day, it&rsquo;s people in our industry &ndash; the people in this room &ndash; who are the ones who execute it.</p>
+<aside class="notes"><p>what all these stories have in common is that like any other failure there&rsquo;s almost certainly no &ldquo;root cause&rdquo;. It&rsquo;s a complex combination of socio-technical systems and the incentives they set up. But at the end of the day, it&rsquo;s people in our industry &ndash; the people in this room &ndash; who are the ones who execute it.</p>
 </aside>
 
 
@@ -192,8 +195,7 @@
 
 <h1 id="a-problem-of-scale">a problem of scale</h1>
 
-<aside class="notes"><p>the problem we have here is not just that these systems all have serious real-world consequences; we can look at the Therac-25 accidents in the 80&rsquo;s for examples of that.
-the problem is that those consequences are multiplied by the scale of these systems</p>
+<aside class="notes"><p>the problem we have here is not just that these systems all have serious real-world consequences; we can look at the Therac-25 accidents in the 80&rsquo;s for examples of that. the problem is that those consequences are multiplied by the scale of these systems.</p>
 </aside>
 
 
@@ -203,10 +205,7 @@ the problem is that those consequences are multiplied by the scale of these syst
 
 <h2 id="quantity-has-its-own-quality">quantity has its own quality</h2>
 
-<aside class="notes"><p>a huge part of the value proposition of IoT and ML is the
-scale of the data involved: collecting massive amounts of data
-from edge computing devices, and processing massive amounts of
-data in ML models.</p>
+<aside class="notes"><p>a huge part of the value proposition of IoT and ML is the scale of the data involved: collecting massive amounts of data from edge computing devices, and processing massive amounts of data in ML models.</p>
 </aside>
 
 
@@ -216,9 +215,7 @@ data in ML models.</p>
 
 <h2 id="no-meaningfully-informed-consent">no meaningfully informed consent</h2>
 
-<aside class="notes"><p>but the scope of machine learning and IoT is incomprensible to
-ordinary users; creating informed and meaningful consent is all
-but impossible</p>
+<aside class="notes"><p>but the scope of machine learning and IoT is incomprensible to ordinary users. when you can determine through a ML model of someone&rsquo;s purchases that they are pregnant, this isn&rsquo;t a piece of data that the consumer willingly and knowingly shared with you. creating informed and meaningful consent is all but impossible</p>
 </aside>
 
 
@@ -230,13 +227,7 @@ but impossible</p>
 
 <p><em><a href="https://ai.google/research/pubs/pub43146">https://ai.google/research/pubs/pub43146</a></em></p>
 
-<aside class="notes"><p>while ML &ldquo;models&rdquo; are probably reasonably well-understood by the elite developers of the best organizations, most users of ML treat the models as binary blobs &ndash; a black d a simple neural network in 9 lines of Python code
-work to Play FlappyBird
-JULY 10, 2016</p>
-
-<p>200 lines of python code to demonstrate DQN with Keras</p>
-
-<p>box into which numbers go and decisions come out. &ldquo;in 100 lines of Python&rdquo;</p>
+<aside class="notes"><p>while ML &ldquo;models&rdquo; are probably reasonably well-understood by the elite developers of the best organizations&hellip;</p>
 </aside>
 
 
@@ -270,6 +261,9 @@ JULY 10, 2016</p>
   <img src="img/in_X_lines_07.png" alt="in_X_lines" />
 </span></p>
 
+<aside class="notes"><p>most users of ML treat the models as binary blobs. a black box into which numbers go and decisions come out. &ldquo;easy machine learning in 100 lines of Python!&rdquo;</p>
+</aside>
+
 
             </section>
           <section>
@@ -279,8 +273,7 @@ JULY 10, 2016</p>
 
 <p><em><a href="https://www.theatlantic.com/technology/archive/2013/10/avoid-facial-detection-algorithms-with-a-t-shirt/280253/">Robison Meyer, The Atlantic, 3 Oct 2013</a></em></p>
 
-<aside class="notes"><p>the consequences of this are open-ended.
-when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
+<aside class="notes"><p>because ML is poorly understood, attacks on it can have open-ended results. maybe today someone is using a William Gibson&rsquo;s Ugly T-Shirt to protect their identity from ubiquitous law enforcement use of facial recognition&hellip;</p>
 </aside>
 
 
@@ -292,7 +285,7 @@ when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
 
 <p><em><a href="https://www.theverge.com/2016/11/3/13507542/facial-recognition-glasses-trick-impersonate-fool">James Vincent, The Verge, 3 Nov 2016</a></em></p>
 
-<aside class="notes"><p>or face-recognition fooling glasses to mislead systems not simply to protect their own identity but to summon a SWAT team in hopes of an &ldquo;accident&rdquo;, do the systems bear any responsibility?</p>
+<aside class="notes"><p>&hellip; but it doesn&rsquo;t take much imagination to see someone using this same system to &ldquo;SWAT&rdquo; unsuspecting targets</p>
 </aside>
 
 
@@ -304,7 +297,7 @@ when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
 
 <p><em><a href="https://www.theverge.com/2018/1/3/16844842/ai-computer-vision-trick-adversarial-patches-google">James Vincent, The Verge, 3 Jan 2018</a></em></p>
 
-<aside class="notes"><p>or when a banana looks, not like a toaster, but a bomb or weapon?</p>
+<aside class="notes"><p>what happens when a banana looks, not like a toaster, but a bomb or weapon? when an &ldquo;accident&rdquo; of that kind occurs, do the engineers of the system bear responsibility for failing to protect against this kind of &ldquo;side channel&rdquo; attack?</p>
 </aside>
 
 
@@ -330,6 +323,9 @@ when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
 
 <p><em><a href="https://thenewstack.io/camouflaged-graffiti-road-signs-can-fool-machine-learning-models/">Kimberly Mok, The New Stack, 14 Sep 2017</a></em></p>
 
+<aside class="notes"><p>unremarkable graphiti was used to confuse a ML algorithm <em>100%</em> of the time</p>
+</aside>
+
 
             </section>
           <section>
@@ -337,9 +333,7 @@ when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
 
 <h2 id="embedded-industry-stuck-in-archaic-threat-model">embedded industry stuck in archaic threat model</h2>
 
-<aside class="notes"><p>if you thought the enterprise was bad&hellip;
-- still shipping devices with private keys and hard-coded passwords
-- &ldquo;secure boot&rdquo; (without which any device can be rooted) is an expensive add-on rather than the default</p>
+<aside class="notes"><p>if you thought the enterprise was bad: they&rsquo;re still shipping devices with shared private keys and hard-coded passwords. we used to say things like &ldquo;well if you have physical possession then it&rsquo;s game over&rdquo; but that&rsquo;s <em>always</em> the case with IoT devices. But we have answer to that: &ldquo;secure boot&rdquo; using TPM to sign the bootloader and OS updates (without which any device can be rooted). But this is treated as an expensive add-on rather than the default</p>
 </aside>
 
 
@@ -363,7 +357,7 @@ when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
 
 <p><em><a href="https://developer.amazon.com/de/blogs/post/Tx3828JHC7O9GZ9/Using-Alexa-Skills-Kit-and-AWS-IoT-to-Voice-Control-Connected-Devices">Robert McCauley, Alexa Blogs, 3 May 2016</a></em></p>
 
-<aside class="notes"><p>&hellip; or require trust delegation and put secure boot at risk</p>
+<aside class="notes"><p>&hellip; or require trust delegation to third parties that put secure boot at risk</p>
 </aside>
 
 
@@ -385,7 +379,7 @@ when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
 
 <p><em><a href="https://www.brookings.edu/wp-content/uploads/2016/06/congress006-1.jpg">https://www.brookings.edu/wp-content/uploads/2016/06/congress006-1.jpg</a></em></p>
 
-<aside class="notes"><p>legal remedy is likely to be ham-fisted&hellip;</p>
+<aside class="notes"><p>when these geniuses decide to act, the legal remedy is likely to be ham-fisted</p>
 </aside>
 
 
@@ -397,7 +391,7 @@ when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
 
 <h2 id="this-is-something">&ldquo;This is something&rdquo;</h2>
 
-<h2 id="we-must-do-this">&ldquo;We must do this!&rdquo;</h2>
+<h2 id="we-must-do-it">&ldquo;We must do it!&rdquo;</h2>
 
 
             </section>
@@ -408,7 +402,7 @@ when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
 
 <p><em><a href="https://imgur.com/gallery/2mIObIu">https://imgur.com/gallery/2mIObIu</a></em></p>
 
-<aside class="notes"><p>&hellip; particularly here in the US where almost all our lawmakers are incompetent&hellip;</p>
+<aside class="notes"><p>This is particularly a problem here in the US where virtually all our lawmakers are incompetent&hellip;</p>
 </aside>
 
 
@@ -420,7 +414,7 @@ when someone uses a William Gibson&rsquo;s Ugly TShirt&hellip;</p>
 
 <p><em><a href="https://www.engadget.com/2017/05/18/fcc-chairman-net-neutrality-1996/">Terrence O&rsquo;Brien, engadget, 18 May 2017</a></em></p>
 
-<aside class="notes"><p>&hellip; or are entirely co-opted by hostile interests</p>
+<aside class="notes"><p>&hellip; or they (and their minions) are entirely co-opted by hostile interests</p>
 </aside>
 
 
@@ -457,7 +451,7 @@ software is typically sold w/o warantee for fitness for any particular use; this
 
 <p><em><a href="https://apility.io/2018/05/25/gdpr-lazy-block-european-users-cloudflare-workers/">https://apility.io/2018/05/25/gdpr-lazy-block-european-users-cloudflare-workers/</a></em></p>
 
-<aside class="notes"><p>the childishness and utter lack of professionalism we&rsquo;ve seen with GDPR</p>
+<aside class="notes"><p>but even in the face of reasonable privacy law like the GDPR, we&rsquo;ve seen our industry act with utter lack of professionalism. After 2 <em>years</em> notice, this &ldquo;I&rsquo;m taking my ball home&rdquo; is the best that orgs can do?</p>
 </aside>
 
 
@@ -469,7 +463,7 @@ software is typically sold w/o warantee for fitness for any particular use; this
 
 <p><em><a href="https://news.ycombinator.com/item?id=16954306">https://news.ycombinator.com/item?id=16954306</a></em></p>
 
-<aside class="notes"><p>aw, poor baby!</p>
+<aside class="notes"><p>top post on The Orange Site: &ldquo;what many posters here miss is that a big group of tech people have no interest in dealing with legal matters.&rdquo; aw, poor baby! childishness! you don&rsquo;t get to be part of a world-impacting profession and pretend there are no real world consequences.</p>
 </aside>
 
 
@@ -503,6 +497,9 @@ software is typically sold w/o warantee for fitness for any particular use; this
 
 <h1 id="feature-not-bug">feature, not bug</h1>
 
+<aside class="notes"><p>if you can&rsquo;t do your job and have to close up shop, Mission. Accomplished.</p>
+</aside>
+
 
             </section>
           <section>
@@ -516,6 +513,9 @@ software is typically sold w/o warantee for fitness for any particular use; this
 
 <p><em><a href="https://www.theregister.co.uk/2018/05/30/salesforce_q1_2019/?">Simon Sharwood, The Register, 30 May 2018</a></em></p>
 
+<aside class="notes"><p>But it doesn&rsquo;t have to be that way. In this interview with Marc Benioff he points out this can be good for our industry. It&rsquo;ll &ldquo;set the guardrails&rdquo;</p>
+</aside>
+
 
             </section>
           <section>
@@ -527,6 +527,9 @@ software is typically sold w/o warantee for fitness for any particular use; this
 
 <p><em><a href="https://www.theregister.co.uk/2018/05/30/salesforce_q1_2019/?">Simon Sharwood, The Register, 30 May 2018</a></em></p>
 
+<aside class="notes"><p>And this is deeply important because we as an industry have failed to set those guardrails for ourselves. It&rsquo;s not too late. What can we do?</p>
+</aside>
+
 
             </section>
           <section>
@@ -534,7 +537,7 @@ software is typically sold w/o warantee for fitness for any particular use; this
 
 <h1 id="consent">Consent</h1>
 
-<aside class="notes"><p>consent is the <em>only</em> workable guiding model when we&rsquo;re talking about relationships between individual people. I consent to</p>
+<aside class="notes"><p>consent is the <em>only</em> workable guiding model when we&rsquo;re talking about relationships between individual people. I consent to being in a conversation with you. You consent to being in a conversation with me. When you decide you don&rsquo;t want to be in that conversation you can withdraw consent and I&rsquo;m supposed to respect that. We hopefully all understand this by now?</p>
 </aside>
 
 
@@ -543,6 +546,9 @@ software is typically sold w/o warantee for fitness for any particular use; this
               
 
 <h1 id="individual-vs-community-consent">Individual vs Community Consent</h1>
+
+<aside class="notes"><p>But consent has some limits once we get a lot more people involved. There are some times when we decide that the will of the community overrides the consent of an individual.</p>
+</aside>
 
 
             </section>
@@ -553,8 +559,7 @@ software is typically sold w/o warantee for fitness for any particular use; this
 
 <p><em><a href="http://www.startribune.com/sack-cartoon-vaccinations/289998831/">Steve Sack, Star Tribune, 27 Jan 2015</a></em></p>
 
-<aside class="notes"><p>every culture has different boundaries here.
-ex. in the EU they protect individual consent strongly&hellip;</p>
+<aside class="notes"><p>We expect everyone to pay their taxes. We ask that people are vaccinated. And the boundaries of individual vs community consent vary by culture. ex. in the EU they protect individual consent strongly&hellip;</p>
 </aside>
 
 
@@ -566,7 +571,19 @@ ex. in the EU they protect individual consent strongly&hellip;</p>
 
 <p><em><a href="https://www.washingtonpost.com/news/volokh-conspiracy/wp/2015/05/29/the-story-behind-the-kelo-case-how-an-obscure-takings-case-came-to-shock-the-conscience-of-the-nation/">Ilya Somin, Washington Post, 29 May 2015</a></em></p>
 
-<aside class="notes"><p>&hellip; whereas in the US we have a mixed bag where businesses get the power of community consent to override the will of individuals, but very little of the responsibility of individual consent.</p>
+<aside class="notes"><p>whereas in the US we have a mixed bag where businesses (which are supposed to be individuals) are often given the power of the community to override individual consent, but very little of the responsibility of consent.</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/tumblr-gdpr.png" alt="gdpr-tumblr" /></p>
+
+<p><em><a href="https://twitter.com/Millstab/status/999762424994594817">https://twitter.com/Millstab/status/999762424994594817</a></em></p>
+
+<aside class="notes"><p>this is the flaw of the consent model as a solution. we saw that side-channel information leaks make consent nearly impossible to understand. and dark UX patterns can manipulate consent. &ldquo;you agreed to this!&rdquo;</p>
 </aside>
 
 
@@ -578,7 +595,7 @@ ex. in the EU they protect individual consent strongly&hellip;</p>
 
 <p><em><a href="https://www.google.com/search?q=externality">https://www.google.com/search?q=externality</a></em></p>
 
-<aside class="notes"><p>aside: are these results being manipulated? the <em>canonical</em> example is pollution!</p>
+<aside class="notes"><p>we see failure of consent at play when we look at the Uber accident. the woman who was killed didn&rsquo;t consent to be part of Uber&rsquo;s experimental driving program. she wasn&rsquo;t behind the wheel. what does &ldquo;consent&rdquo; mean when other human lives are treated as an externality? aside: are these results being manipulated? the <em>canonical</em> example is pollution!</p>
 </aside>
 
 
@@ -588,9 +605,7 @@ ex. in the EU they protect individual consent strongly&hellip;</p>
 
 <h1 id="values-vary">values vary</h1>
 
-<aside class="notes"><p>Flaws of the Consent Model as a Solution
-- ethical definitions vary b/c values vary (ex. balance of community vs individual consent varies significantly between Europe and the US)
-- how do other professions solve this problem&hellip;?</p>
+<aside class="notes"><p>ethical definitions vary b/c values vary (ex. that balance of community vs individual consent varies significantly between Europe and the US). so how do other professions solve this problem&hellip;?</p>
 </aside>
 
 
@@ -602,8 +617,7 @@ ex. in the EU they protect individual consent strongly&hellip;</p>
 
 <p><em><a href="https://twitter.com/soniagupta504/status/1011591288003575808">https://twitter.com/soniagupta504/status/1011591288003575808</a></em></p>
 
-<aside class="notes"><p>Sonia (who was up here on stage last night):
-&ldquo;Lawyers and doctors enter their professions knowing, from the outset, just how heavy  their burdens are. They hold human rights and life in their hands.&rdquo;</p>
+<aside class="notes"><p>Sonia (who was up here on stage last night): &ldquo;Lawyers and doctors enter their professions knowing, from the outset, just how heavy their burdens are. They hold human rights and life in their hands.&rdquo;</p>
 </aside>
 
 
@@ -625,12 +639,18 @@ ex. in the EU they protect individual consent strongly&hellip;</p>
 
 <h2 id="with-great-power-comes-great-responsibility">&ldquo;With great power comes great responsibility&rdquo;</h2>
 
+<aside class="notes"><p>or as all the comic book nerds in the room know it: with great power comes great responsibility</p>
+</aside>
+
 
             </section>
           <section>
               
 
 <h1 id="professional-ethics">professional ethics</h1>
+
+<aside class="notes"><p>this is the basis of professional ethics</p>
+</aside>
 
 
             </section>
@@ -641,8 +661,7 @@ ex. in the EU they protect individual consent strongly&hellip;</p>
 
 <h1 id="self-regulation">self-regulation</h1>
 
-<aside class="notes"><p>historically licensing and professional organizations (ex. AMA, AIA, ASME, bar associations) have arisen from the professions themselves rather than being imposed clumsily from the outside.
-government licensing requirements are typically delegated to the professional organizations</p>
+<aside class="notes"><p>historically licensing and professional organizations (ex. AMA, AIA, ASME, bar associations) have arisen from the professions themselves rather than being imposed clumsily from the outside. government licensing requirements are typically delegated to the professional organizations</p>
 </aside>
 
 
@@ -669,7 +688,7 @@ government licensing requirements are typically delegated to the professional or
 
 <p><em><a href="http://www.nber.org/papers/w10467.pdf">ref http://www.nber.org/papers/w10467.pdf</a></em></p>
 
-<aside class="notes"><p>study by Marc Law &amp; Sukkoo Kim of National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information assymmetry rather than creating monopoly power&hellip;</p>
+<aside class="notes"><p>study by Marc Law &amp; Sukkoo Kim of National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information assymmetry rather than creating monopoly power. consumers of our services generally don&rsquo;t understand what they&rsquo;re buying, and so professional bodies provide an answer to the question of whether the product is acceptable.</p>
 </aside>
 
 
@@ -679,8 +698,7 @@ government licensing requirements are typically delegated to the professional or
 
 <h1 id="gatekeeping">gatekeeping</h1>
 
-<aside class="notes"><p>&hellip; so in other words they serve as gatekeepers.
-well, that&rsquo;s a little problematic isn&rsquo;t it? currently our barriers to entry are <em>relatively</em> low relative to other professions that provide the ability to bootstrap into the middle class. (although we still have a <em>lot</em> of work to do!) so adding gatekeeping mechanisms seems like it&rsquo;d work against the direction with want to take our industry wrt inclusion</p>
+<aside class="notes"><p>&hellip; so in other words they serve as gatekeepers. well, that&rsquo;s a little problematic isn&rsquo;t it? we have enough barriers to entry in our profession as it is. we still have a <em>lot</em> of work to do, but this profession is one that can help bootstrap people firmly into the middle-class. so adding new barriers like &ldquo;you must have <em>this</em> degree&rdquo; or &ldquo;you must have this many years experience working under a licensed developer&rdquo; seem like they&rsquo;d work against the direction we want to take our industry, right?</p>
 </aside>
 
 
@@ -690,8 +708,7 @@ well, that&rsquo;s a little problematic isn&rsquo;t it? currently our barriers t
 
 <h1 id="shared-ethical-baseline">shared ethical baseline</h1>
 
-<aside class="notes"><p>but an advantage of a professional organization&rsquo;s ethical framework is that it at least gives a shared baseline: right now we&rsquo;re all trying to figure this out for ourselves.
-we should hold each other to task</p>
+<aside class="notes"><p>but an advantage of a professional organization&rsquo;s ethical framework is that it at least gives a shared baseline: right now we&rsquo;re all trying to figure this out for ourselves. and we should hold each other to task</p>
 </aside>
 
 
@@ -701,8 +718,7 @@ we should hold each other to task</p>
 
 <h1 id="what-is-to-be-done">what is to be done?</h1>
 
-<aside class="notes"><p>waiting for &ldquo;the industry&rdquo; to fix it isn&rsquo;t working.
-we all, individually, are the industry. need to take individual action:
+<aside class="notes"><p>waiting for &ldquo;the industry&rdquo; to fix it isn&rsquo;t working. we all, individually, are the industry. need to take individual action:
 - influence the community
 - ex. talk about this stuff!
 - ex. what organizations do we work for?</p>
@@ -717,8 +733,7 @@ we all, individually, are the industry. need to take individual action:
 
 <p><em><a href="https://arstechnica.com/tech-policy/2018/06/microsoft-staff-call-on-company-to-end-ice-contract/">Peter Bright, Ars Technica, 20 Jun 2018</a></em></p>
 
-<aside class="notes"><p>influence the organization
-we see Microsoft employees pushing for change in what customers their organization serves</p>
+<aside class="notes"><p>we can influence the organization. we see Microsoft employees pushing for change in what customers their organization serves</p>
 </aside>
 
 
@@ -785,8 +800,7 @@ we see Microsoft employees pushing for change in what customers their organizati
 
 <h1 id="direct-action">direct action</h1>
 
-<aside class="notes"><p>what is available to everyone regardless of our work conditions, and perhaps more effective than anything else we can do, is direct action at an engineering level
-what choices do we make as technologists?</p>
+<aside class="notes"><p>what is available to everyone regardless of our work conditions, and perhaps more effective than anything else we can do, is direct action at an engineering level. what choices do we make as technologists?</p>
 </aside>
 
 
@@ -807,18 +821,6 @@ what choices do we make as technologists?</p>
 </code></pre>
 
 <aside class="notes"><p>we need to take responsibility for quality proportional to the risks involved with the software. while this is obvious in self-driving cars, we need to design-out unexpected behaviors in ML.</p>
-</aside>
-
-
-            </section>
-          <section>
-              
-
-<p><img src="img/tumblr-gdpr.png" alt="gdpr-tumblr" /></p>
-
-<p><em><a href="https://twitter.com/Millstab/status/999762424994594817">https://twitter.com/Millstab/status/999762424994594817</a></em></p>
-
-<aside class="notes"><p>push back against dark UX patterns</p>
 </aside>
 
 
@@ -959,8 +961,7 @@ bypass business analysts and project managers on opinions that are purely techni
   <img src="img/jira-clock-puncher.png" alt="jira-clock-puncher" />
 </span></p>
 
-<aside class="notes"><p>formal Agile methodologies contribute to the problem. &ldquo;act ethically&rdquo; doesn&rsquo;t have any story points in this epic.
-But you&rsquo;re supposed to be a professional, not a JIRA clock puncher. act like it!</p>
+<aside class="notes"><p>formal Agile methodologies contribute to the problem. &ldquo;act ethically&rdquo; doesn&rsquo;t have any story points in this epic. But you&rsquo;re supposed to be a professional, not a JIRA clock puncher. act like it!</p>
 </aside>
 
 
