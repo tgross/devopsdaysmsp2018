@@ -15,7 +15,7 @@
     {{ $theme := or .Page.Params.reveal_hugo.theme .Site.Params.reveal_hugo.theme .Site.Data.reveal_hugo.defaults.theme "black" }}
     {{ $custom_theme := or .Page.Params.reveal_hugo.custom_theme .Site.Params.reveal_hugo.custom_theme }}
     {{ if $custom_theme }}
-    <link rel="stylesheet" href="{{ $custom_theme | relURL }}" id="theme">
+    <link rel="stylesheet" href="{{ $custom_theme }}" id="theme">
     {{ else }}
     <link rel="stylesheet" href="{{ $reveal_cdn }}/css/theme/{{ $theme }}.css" id="theme">
     {{ end }}
@@ -49,7 +49,7 @@
           { src: '{{ $reveal_cdn }}/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: '{{ $reveal_cdn }}/plugin/zoom-js/zoom.js', async: true },
           // the notes plugin can't run off the CDN b/c the HTML file isn't there
-          { src: '{{ "reveal-hugo/plugin/notes/notes.js" | relURL }}', async: true }
+          { src: '{{ "reveal-hugo/plugin/notes/notes.js" }}', async: true }
       ]};
     </script>
     <script src="{{ $reveal_cdn }}/lib/js/head.min.js"></script>

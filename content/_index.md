@@ -3,7 +3,7 @@ title = "DevOps Days MSP 2018"
 outputs = ["Reveal"]
 
 [reveal_hugo]
-custom_theme = "css/devopsdays.css"
+custom_theme = "./css/devopsdays.css"
 highlight_theme = "solarized-dark"
 
 +++
