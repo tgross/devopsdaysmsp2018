@@ -28,7 +28,7 @@ an alternate title could be...
 ---
 
 ## or...
-## Because Eternal Vigilance is the Price of Liberty, We Have to Talk About Ethics Again
+## Because Eternal Vigilance is the Price of Liberty, We Have to Talk About Ethics of the Tech Industry Again
 
 ---
 
@@ -88,7 +88,7 @@ Tesla's autopilot has been implicated in the deaths of several drivers at this p
 *[Kashmir Hill, Forbes, 16 Feb 2012](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/)*
 
 {{% note %}}
-Machine learning algorithms may know more about us and our loved ones than we do ourselves...
+Machine learning algorithms may know more about us and our loved ones than we do ourselves. Target was able to determine from customer purchases not just when customers are pregnant but at what stage of their pregnancy they were (buying unscented products during late stages, for example).
 {{% /note %}}
 
 ---
@@ -98,12 +98,12 @@ Machine learning algorithms may know more about us and our loved ones than we do
 *[Jana Kasperkevic, The Guardian, 1 Jul 2015](https://www.theguardian.com/technology/2015/jul/01/google-sorry-racist-auto-tag-photo-app)*
 
 {{% note %}}
-... while simultaneously unconsciously encoding our biases. (This one was so bad that I cropped it out of this picture.)
+ML is simultaneously unconsciously encoding our biases. (This one was so bad that I cropped it out of this picture.)
 {{% /note %}}
 
 ---
 ![defeat-the-baby](img/defeat-the-baby.png)
-
+  *
 *https://twitter.com/yipe/status/1005555741153902592*
 
 {{% note %}}
@@ -125,7 +125,7 @@ we've invited these systems into our homes... (and ok, yeah this is funny)
 ![marco](img/marco-rogers.png)
 
 {{% note %}}
-what all these stories have in common is that like any other failure there's almost certainly no "root cause". It's a complex combination of socio-technical systems and the incentives they set up. But at the end of the day, it's people in our industry -- the people in this room -- who are the ones who execute it.
+what all these stories have in common is that like any other failure there's almost certainly no "root cause"; it's unlikely that anyone at these companies set out with awful intentions. It's a complex combination of socio-technical systems and the incentives they set up. But at the end of the day, it's people in our industry -- the people in this room -- who are the ones who execute and implement these systems
 {{% /note %}}
 
 ---
@@ -149,17 +149,7 @@ a huge part of the value proposition of IoT and ML is the scale of the data invo
 ## no meaningfully informed consent
 
 {{% note %}}
-but the scope of machine learning and IoT is incomprensible to ordinary users. when you can determine through a ML model of someone's purchases that they are pregnant, this isn't a piece of data that the consumer willingly and knowingly shared with you. creating informed and meaningful consent is all but impossible
-{{% /note %}}
-
----
-
-![machine-learning-tech-debt](img/machine-learning-tech-debt.png)
-
-*https://ai.google/research/pubs/pub43146*
-
-{{% note %}}
-while ML "models" are probably reasonably well-understood by the elite developers of the best organizations...
+but the scope of machine learning and IoT is incomprensible to ordinary users. when you can determine through a ML model of someone's purchases not just that they are pregnant but that they're in the 3rd trimester, this isn't a piece of data that the consumer willingly and knowingly shared with you. creating informed and meaningful consent is all but impossible
 {{% /note %}}
 
 ---
@@ -173,7 +163,7 @@ while ML "models" are probably reasonably well-understood by the elite developer
 {{% fragment %}}![in_X_lines](img/in_X_lines_07.png){{% /fragment %}}
 
 {{% note %}}
-most users of ML treat the models as binary blobs. a black box into which numbers go and decisions come out. "easy machine learning in 100 lines of Python!"
+what also makes ML and IoT especially problematic is that their inherent complexity is not being respected, only their results. amateurish engineering: "easy machine learning in 100 lines of Python!". maybe ML tools are reasonably well-understood by the elite developers of the best organizations, but *many* users of ML treat the tools as magic and the models as binary blobs: a black box into which numbers go and decisions come out.
 {{% /note %}}
 
 ---
@@ -242,7 +232,7 @@ if you thought the enterprise was bad: they're still shipping devices with share
 *http://www.eclipse.org/hawkbit/*
 
 {{% note %}}
-existing solutions for IoT Over-the-Air updates (OTA) are mostly research projects at best (ex. Hawkbit)...
+existing solutions for IoT Over-the-Air updates (OTA) are mostly research projects at best (ex. Hawkbit, which depending on how you look at it is either an insecure-by-default toy, or an overcomplicated kit-of-parts)...
 {{% /note %}}
 
 ---
@@ -252,7 +242,7 @@ existing solutions for IoT Over-the-Air updates (OTA) are mostly research projec
 *[Robert McCauley, Alexa Blogs, 3 May 2016](https://developer.amazon.com/de/blogs/post/Tx3828JHC7O9GZ9/Using-Alexa-Skills-Kit-and-AWS-IoT-to-Voice-Control-Connected-Devices)*
 
 {{% note %}}
-... or require trust delegation to third parties that put secure boot at risk
+... or require trust delegation to third parties like AWS IoT that throw-away the guarantees about provenance that put secure boot at risk
 {{% /note %}}
 
 
@@ -261,7 +251,7 @@ existing solutions for IoT Over-the-Air updates (OTA) are mostly research projec
 ## Our abdication of responsibility invites political remedy
 
 {{% note %}}
-the problem with out complacency on this as an industry is that it invites someone to "do something" about it.
+the problem with our complacency on this as an industry is that it invites someone to "do something" about it.
 {{% /note %}}
 
 ---
@@ -279,6 +269,10 @@ when these geniuses decide to act, the legal remedy is likely to be ham-fisted
 ## "We have to do something!"
 ## "This is something"
 ## "We must do it!"
+
+{{% note %}}
+we've seen this over and over again. look at the evergreen fights over encryption, where the government thinks they can somehow make math available only to Good People
+{{% /note %}}
 
 ---
 
@@ -307,8 +301,7 @@ This is particularly a problem here in the US where virtually all our lawmakers 
 *https://www.apache.org/licenses/LICENSE-2.0*
 
 {{% note %}}
-this is the Apache license but other OSS licenses are similar, as are most EULAs.
-software is typically sold w/o warantee for fitness for any particular use; this could change
+today much of our work is protected by saying "hey we don't warantee this for fitness for any particular use." this is the Apache license but other OSS licenses are similar, as are most EULAs. we've been allowed to get away with this, but that could change.
 {{% /note %}}
 
 ---
@@ -336,7 +329,7 @@ but even in the face of reasonable privacy law like the GDPR, we've seen our ind
 *https://news.ycombinator.com/item?id=16954306*
 
 {{% note %}}
-top post on The Orange Site: "what many posters here miss is that a big group of tech people have no interest in dealing with legal matters." aw, poor baby! childishness! you don't get to be part of a world-impacting profession and pretend there are no real world consequences.
+top post on The Orange Site: "what many posters here miss is that a big group of tech people have no interest in dealing with legal matters." aw, poor baby! you don't get to be part of a world-impacting profession and pretend there are no real world consequences. childishness!
 {{% /note %}}
 
 ---
@@ -356,7 +349,7 @@ on the other hand, if this is what organizations are doing...
 *[Natasha Lomas, Tech Crunch, 5 May 2018](https://techcrunch.com/2018/05/05/unroll-me-to-close-to-eu-users-saying-it-cant-comply-with-gdpr/)*
 
 {{% note %}}
-...then it's all working as intended!
+...then maybe it's all working as intended!
 {{% /note %}}
 
 ---
@@ -364,7 +357,7 @@ on the other hand, if this is what organizations are doing...
 # feature, not bug
 
 {{% note %}}
-if you can't do your job and have to close up shop, Mission. Accomplished.
+if you can't do your job to protect the privacy of users and have to close up shop: Mission. Accomplished.
 {{% /note %}}
 
 ---
@@ -378,7 +371,6 @@ if you can't do your job and have to close up shop, Mission. Accomplished.
 {{% note %}}
 But it doesn't have to be that way. In this interview with Marc Benioff he points out this can be good for our industry. It'll "set the guardrails"
 {{% /note %}}
-
 
 ---
 
@@ -395,7 +387,8 @@ And this is deeply important because we as an industry have failed to set those 
 # Consent
 
 {{% note %}}
-consent is the *only* workable guiding model when we're talking about relationships between individual people. I consent to being in a conversation with you. You consent to being in a conversation with me. When you decide you don't want to be in that conversation you can withdraw consent and I'm supposed to respect that. We hopefully all understand this by now?
+[10:00]
+consent is the *only* workable guiding model when we're talking about relationships between individual people. I consent to being in a relationship with you. You consent to being in a relationship with me. When you decide you don't want to be in that relationship you can withdraw consent and I'm supposed to respect that. We *hopefully* all understand this by now?
 {{% /note %}}
 
 ---
@@ -403,7 +396,7 @@ consent is the *only* workable guiding model when we're talking about relationsh
 # Individual vs Community Consent
 
 {{% note %}}
-But consent has some limits once we get a lot more people involved. There are some times when we decide that the will of the community overrides the consent of an individual.
+But consent has some limits once we get a lot more people involved. Although individual consent is the basis of liberal democracy, there are some times when we decide that the will of the community overrides the consent of an individual.
 {{% /note %}}
 
 ---
@@ -443,7 +436,7 @@ this is the flaw of the consent model as a solution. we saw that side-channel in
 *https://www.google.com/search?q=externality*
 
 {{% note %}}
-we see failure of consent at play when we look at the Uber accident. the woman who was killed didn't consent to be part of Uber's experimental driving program. she wasn't behind the wheel. what does "consent" mean when other human lives are treated as an externality? aside: are these results being manipulated? the *canonical* example is pollution!
+we see failure of consent at play when we look at the Uber accident. the woman who was killed didn't consent to be part of Uber's experimental driving program. she wasn't behind the wheel. what does "consent" mean when other human lives are treated as an externality? aside: are these results being manipulated? the *canonical* example is pollution! what coal industry PR team infiltrated this into Google's results?
 {{% /note %}}
 
 ---
@@ -451,7 +444,7 @@ we see failure of consent at play when we look at the Uber accident. the woman w
 # values vary
 
 {{% note %}}
-ethical definitions vary b/c values vary (ex. that balance of community vs individual consent varies significantly between Europe and the US). so how do other professions solve this problem...?
+ethical definitions vary b/c values vary (ex. that balance of community vs individual consent varies significantly between Europe and the US). but we're not the first people to have this problem! so how do other professions solve this problem...?
 {{% /note %}}
 
 ---
@@ -479,7 +472,7 @@ highly impactful professions know that their limits must be more stringent
 ## "With great power comes great responsibility"
 
 {{% note %}}
-or as all the comic book nerds in the room know it: with great power comes great responsibility
+or as all the comic book nerds in the room know it: "with great power comes great responsibility"
 {{% /note %}}
 
 ---
@@ -504,8 +497,7 @@ historically licensing and professional organizations (ex. AMA, AIA, ASME, bar a
 # licensing requires monopoly
 
 {{% note %}}
-- professional certification w/o regulation or consequences is toothless and worthless (ex. CompTIA or ICS^2 or Project Management Institute)
-- professional organizations ethical requirements are typically about fair dealing and bare minimum safety guidelines
+professional certification w/o the consequences of regulation is basically toothless. we see lots and lots of useless rent-seeking certifications today already (CompTIA, Project Management Institute). it's worth considering what the side-effects of regulation-supported monopoly would be.
 {{% /note %}}
 
 ---
@@ -515,7 +507,7 @@ historically licensing and professional organizations (ex. AMA, AIA, ASME, bar a
 *[ref http://www.nber.org/papers/w10467.pdf](http://www.nber.org/papers/w10467.pdf)*
 
 {{% note %}}
-study by Marc Law & Sukkoo Kim of National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information assymmetry rather than creating monopoly power. consumers of our services generally don't understand what they're buying, and so professional bodies provide an answer to the question of whether the product is acceptable.
+study by Marc Law & Sukkoo Kim of National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information assymmetry rather than creating monopoly power. consumers of our services generally don't understand what they're buying, and so professional bodies provide an answer to the question of whether the product is acceptable. professional organizations ethical requirements are typically about fair dealing and bare minimum safety guidelines.
 {{% /note %}}
 
 ---
@@ -539,6 +531,7 @@ but an advantage of a professional organization's ethical framework is that it a
 # what is to be done?
 
 {{% note %}}
+[20:00]
 waiting for "the industry" to fix it isn't working. we all, individually, are the industry. need to take individual action:
 - influence the community
 - ex. talk about this stuff!
@@ -588,10 +581,7 @@ and we've seen Amazon employees pushing for change
 # Who's hiring?
 
 {{% note %}}
-the labor market for our profession gives us enormous power right now.
-- we can push hard for better hiring policies
-- we can push hard for D&I efforts
-- we can push hard for our organizations to be better
+the labor market for our profession gives us enormous power right now. we can push hard for better hiring policies. we can push hard for D&I efforts. we can push hard for our organizations to be better
 {{% /note %}}
 
 ---
@@ -599,7 +589,7 @@ the labor market for our profession gives us enormous power right now.
 # ensure your own mask is secure
 
 {{% note %}}
-that being said, we should also cut each other some slack. you don't know much about the circumstances of any particular person. so while we should be holding each other to task, individuals need to make their own decisions about where they work and that doesn't make them The Enemy. (unless they work at Oracle, just sayin')
+that being said, we should also cut each other some slack. you don't know much about the circumstances of any particular person. so while we should be holding each other to task, individuals need to make their own decisions about where they work and that doesn't make them The Enemy. (unless they work at Palantir, just sayin')
 {{% /note %}}
 
 ---
@@ -608,6 +598,28 @@ that being said, we should also cut each other some slack. you don't know much a
 
 {{% note %}}
 what is available to everyone regardless of our work conditions, and perhaps more effective than anything else we can do, is direct action at an engineering level. what choices do we make as technologists?
+{{% /note %}}
+
+---
+
+## Immutable?
+
+![kafka](img/Kafka.png)
+
+[Jay Kreps, Cloudera, 11 June 2015](https://vision.cloudera.com/apache-kafka-a-platform-for-real-time-data-streams-part-1/)
+
+{{% note %}}
+the pipelines we use to ingest data in many orgs are using immutable event stores
+{{% /note %}}
+
+---
+
+## "Immutable"
+
+![kafka](img/Kafka-per-user.png)
+
+{{% note %}}
+... per user encryption keys can be used to allow immutable infrastructures that are compatible with the "right to be forgotten"
 {{% /note %}}
 
 ---
@@ -626,29 +638,7 @@ def should_brake(road):
 ```
 
 {{% note %}}
-we need to take responsibility for quality proportional to the risks involved with the software. while this is obvious in self-driving cars, we need to design-out unexpected behaviors in ML.
-{{% /note %}}
-
----
-
-## Immutable?
-
-![kafka](img/Kafka.png)
-
-[Jay Kreps, Cloudera, 11 June 2015](https://vision.cloudera.com/apache-kafka-a-platform-for-real-time-data-streams-part-1/)
-
-{{% note %}}
-many orgs are using immutable event stores
-{{% /note %}}
-
----
-
-## "Immutable"
-
-![kafka](img/Kafka-per-user.png)
-
-{{% note %}}
-... per user encryption keys can be used to allow immutable infrastructures that are compatible with the "right to be forgotten"
+we need to take responsibility for quality proportional to the risks involved with the software. this is obvious in self-driving cars
 {{% /note %}}
 
 ---
@@ -656,10 +646,46 @@ many orgs are using immutable event stores
 # ML models are state
 
 {{% note %}}
-speaking of immutability...
 our entire industry has unified around our worries about statefulness, but...
-ML is the ultimate stateful application
-the entire model is a side-effect, so you can't design-out side-channel attacks.
+ML is the ultimate stateful application. you're using software to generate these software models -- the entire application is a side-effect! how can we influence those side-effects?
+{{% /note %}}
+
+---
+
+![machine-learning-tech-debt](img/machine-learning-tech-debt.png)
+
+*https://ai.google/research/pubs/pub43146*
+
+{{% note %}}
+we desperately need better tooling to design-out unexpected behaviors in ML. The hidden feedback loops and undeclared consumers, and entangled data dependencies represent a side-channel source of technical debt. and it's the worst kind of technical debt -- it's "shadow debt" that's taken on unknowingly.
+{{% /note %}}
+
+---
+
+> To make great products:
+
+> do machine learning like the great engineer you are, not like the great machine learning expert you aren't.
+
+> ...
+
+> Insofar as well-being and company health is concerned, human judgement is required to connect any machine learned objective to the nature of the product you are selling and your business plan.
+
+*[Martin Zinkevich (Google), Rules of Machine Learning: Best Practices for ML Engineering](https://developers.google.com/machine-learning/rules-of-ml/)*
+
+---
+
+# SQL > ML
+
+{{% note %}}
+first rule should always be: why are we choosing ML over some well-tuned SQL or other algorithm? are we choosing to use a method with chaotic feedback mechanisms instead of something that's simple and deterministic simply because of resume-driven development?
+{{% /note %}}
+
+---
+
+## models should be testable and human-interpretable
+
+{{% note %}}
+simple linear or logrithimic regression models are easier to debug, calibrate, and avoid feedback loops than models that try to optimize their own accuracy. combine features in human-understandable ways, remove unused features (which represent both technical debt and side-channel opportunities), quantify any observed undesirable behavior and build tests for it.
 {{% /note %}}
 
 ---
@@ -667,8 +693,7 @@ the entire model is a side-effect, so you can't design-out side-channel attacks.
 # align training data with real world demographics
 
 {{% note %}}
-- choosing ML model inputs that reflect the population
-- align engineering ethics with business needs (ex. "if we pick machine vision training data that reflects real demographics, we can avoid the embarassment for our organization of having to explain why our software acts racist.")
+choose ML model inputs that reflect the population. this is win-win: align engineering ethics with business needs (ex. "if we pick machine vision training data that reflects real demographics, we can avoid the embarassment for our organization of having to explain why our software acts racist.")
 {{% /note %}}
 
 ---
@@ -676,7 +701,7 @@ the entire model is a side-effect, so you can't design-out side-channel attacks.
 # technical leadership
 
 {{% note %}}
-- we can't rely on project managers or business analysts to take the lead on designing our systems ethically because they simply may not understand the side-effects. you're the technical professional: they're expecting you to take the lead on this!
+we can't rely on project managers or business analysts to take the lead on designing our systems ethically because they simply may not understand the side-effects. you're the technical professional: they're expecting you to take the lead on this!
 {{% /note %}}
 
 ---
@@ -684,12 +709,10 @@ the entire model is a side-effect, so you can't design-out side-channel attacks.
 # "best practice is..."
 
 {{% note %}}
-"the best thing about best practices is there are so many of them to choose from"
-bypass business analysts and project managers on opinions that are purely technical
+"the best thing about best practices is there are so many of them to choose from." you don't need to ask permission from your business analysts and project managers on opinions that are purely technical
 {{% /note %}}
 
 ---
-
 
 ![jira-clock-puncher](img/jira-clock-puncher.png)
 {{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
@@ -716,6 +739,10 @@ formal Agile methodologies contribute to the problem. "act ethically" doesn't ha
 > We aren't a craft anymore. We might feel like artisans with laptops but what we produce could potentially be in front of a significant chunk of the human race by lunchtime. We're not hand-crafting dovetail joints here.
 
 *[Anne Currie, The Register, 1 Mar 2018](https://www.theregister.co.uk/2018/03/01/ethics_yeah_thats_great_but_do_they_scale/)*
+
+{{% note %}}
+leave you with...
+{{% /note %}}
 
 ---
 
