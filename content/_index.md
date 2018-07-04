@@ -34,10 +34,10 @@ an alternate title could be...
 
 > We've updated our privacy policy!
 
-> The opinions expressed in this talk are the speaker's alone and do not reflect the view of this conference, your employer, or my mom. Any reference to or citation of any person or organization does not constitute or imply an endorsement or recommendation of the content of this talk. The speaker is grossly unqualified to tell you how to live you life. Your mileage may vary. Not to be used in the manufacture of nuclear weapons. By attending this talk the speaker hereby grants you an irrevocable, perpetual, non-exlusive, tranferable, worldwide license to be excellent to each other.
+> The opinions expressed in this talk are the speaker's alone and do not reflect the view of this conference, your employer, or my mom. Any reference to or citation of any person or organization does not constitute or imply an endorsement or recommendation of the content of this talk. The speaker is grossly unqualified to tell you how to live you life. Your mileage may vary. Not to be used in the manufacture of nuclear weapons. By attending this talk the speaker hereby grants you an irrevocable, perpetual, non-exclusive, transferable, worldwide license to be excellent to each other.
 
 {{% note %}}
-why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? Why do we as engineers even need to discuss this stuff? "Ethics is hard!"
+why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? Why do we as engineers even need to discuss this stuff? "Ethics is hard!" "C'mon, I just want to code!"
 {{% /note %}}
 
 ---
@@ -58,7 +58,7 @@ Back in March a self-driving car operated by Uber killed a pedestrian. The NTSB 
 *[James Vincent, The Verge, 24 Mar 2016](https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist)*
 
 {{% note %}}
-A couple years ago, MSFT demonstrated their ML capabilities with the Tay chatbot. They let it loose to learn from whatever racist trolls wanted to teach it. The experiment was stopped and the whole debacle embarassed MSFT. Now clearly the horrible Internet people are primarily to blame here, but the researchers failed to anticipate the "side channel" attacks inherent to their system
+A couple years ago, MSFT demonstrated their ML capabilities with the Tay chatbot. They let it loose to learn from whatever racist trolls wanted to teach it. The experiment was stopped and the whole debacle embarrassed MSFT. Now clearly the horrible Internet people are primarily to blame here, but the researchers failed to anticipate the "side channel" attacks inherent to their system
 {{% /note %}}
 
 ---
@@ -68,7 +68,7 @@ A couple years ago, MSFT demonstrated their ML capabilities with the Tay chatbot
 *[Russell Brandom, The Verge, 12 May 2017](https://www.theverge.com/2017/5/12/15630354/nhs-hospitals-ransomware-hack-wannacry-bitcoin)*
 
 {{% note %}}
-in an IoT example, last year countless devices in UK hospitals were taken over by Wannacry ransomware. patient lives were put at risk not just because of poor patch hygine but because of the design flaws that allowed access to the devices in the first place and because of warped incentives in the government programs that produced the stolen malware in the first place.
+in an IoT example, last year countless devices in UK hospitals were taken over by Wannacry ransomware. patient lives were put at risk not just because of poor patch hygiene but because of the design flaws that allowed access to the devices in the first place and because of warped incentives in the government programs that produced the stolen malware in the first place.
 {{% /note %}}
 
 ---
@@ -149,7 +149,7 @@ a huge part of the value proposition of IoT and ML is the scale of the data invo
 ## no meaningfully informed consent
 
 {{% note %}}
-but the scope of machine learning and IoT is incomprensible to ordinary users. when you can determine through a ML model of someone's purchases not just that they are pregnant but that they're in the 3rd trimester, this isn't a piece of data that the consumer willingly and knowingly shared with you. creating informed and meaningful consent is all but impossible
+but the scope of machine learning and IoT is incomprehensible to ordinary users. when you can determine through a ML model of someone's purchases not just that they are pregnant but that they're in the 3rd trimester, this isn't a piece of data that the consumer willingly and knowingly shared with you. creating informed and meaningful consent is all but impossible
 {{% /note %}}
 
 ---
@@ -214,7 +214,7 @@ the flaws of self-driving vehicles and the organizations operating them seem ter
 *[Kimberly Mok, The New Stack, 14 Sep 2017](https://thenewstack.io/camouflaged-graffiti-road-signs-can-fool-machine-learning-models/)*
 
 {{% note %}}
-unremarkable graphiti was used to confuse a ML algorithm *100%* of the time
+unremarkable graffiti was used to confuse a ML algorithm *100%* of the time
 {{% /note %}}
 
 ---
@@ -301,7 +301,7 @@ This is particularly a problem here in the US where virtually all our lawmakers 
 *https://www.apache.org/licenses/LICENSE-2.0*
 
 {{% note %}}
-today much of our work is protected by saying "hey we don't warantee this for fitness for any particular use." this is the Apache license but other OSS licenses are similar, as are most EULAs. we've been allowed to get away with this, but that could change.
+today much of our work is protected by saying "hey we don't warranty this for fitness for any particular use." this is the Apache license but other OSS licenses are similar, as are most EULAs. we've been allowed to get away with this, but that could change.
 {{% /note %}}
 
 ---
@@ -379,7 +379,7 @@ But it doesn't have to be that way. In this interview with Marc Benioff he point
 *[Simon Sharwood, The Register, 30 May 2018](https://www.theregister.co.uk/2018/05/30/salesforce_q1_2019/?)*
 
 {{% note %}}
-And this is deeply important because we as an industry have failed to set those guardrails for ourselves. It's not too late. What can we do?
+And this is deeply important because we as an industry have failed to set those guardrails for ourselves. And the larger society (our users) are starting to see this. It's not too late. What can we do?
 {{% /note %}}
 
 ---
@@ -507,7 +507,7 @@ professional certification w/o the consequences of regulation is basically tooth
 *[ref http://www.nber.org/papers/w10467.pdf](http://www.nber.org/papers/w10467.pdf)*
 
 {{% note %}}
-study by Marc Law & Sukkoo Kim of National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information assymmetry rather than creating monopoly power. consumers of our services generally don't understand what they're buying, and so professional bodies provide an answer to the question of whether the product is acceptable. professional organizations ethical requirements are typically about fair dealing and bare minimum safety guidelines.
+study by Marc Law & Sukkoo Kim of National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information asymmetry rather than creating monopoly power. consumers of our services generally don't understand what they're buying, and so professional bodies provide an answer to the question of whether the product is acceptable. professional organizations ethical requirements are typically about fair dealing and bare minimum safety guidelines.
 {{% /note %}}
 
 ---
@@ -685,7 +685,7 @@ first rule should always be: why are we choosing ML over some well-tuned SQL or 
 ## models should be testable and human-interpretable
 
 {{% note %}}
-simple linear or logrithimic regression models are easier to debug, calibrate, and avoid feedback loops than models that try to optimize their own accuracy. combine features in human-understandable ways, remove unused features (which represent both technical debt and side-channel opportunities), quantify any observed undesirable behavior and build tests for it.
+simple linear or logarithmic regression models are easier to debug, calibrate, and avoid feedback loops than models that try to optimize their own accuracy. combine features in human-understandable ways, remove unused features (which represent both technical debt and side-channel opportunities), quantify any observed undesirable behavior and build tests for it.
 {{% /note %}}
 
 ---
@@ -693,7 +693,7 @@ simple linear or logrithimic regression models are easier to debug, calibrate, a
 # align training data with real world demographics
 
 {{% note %}}
-choose ML model inputs that reflect the population. this is win-win: align engineering ethics with business needs (ex. "if we pick machine vision training data that reflects real demographics, we can avoid the embarassment for our organization of having to explain why our software acts racist.")
+choose ML model inputs that reflect the population. this is win-win: align engineering ethics with business needs (ex. "if we pick machine vision training data that reflects real demographics, we can avoid the embarrassment for our organization of having to explain why our software acts racist.")
 {{% /note %}}
 
 ---
