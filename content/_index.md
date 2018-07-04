@@ -609,7 +609,7 @@ what is available to everyone regardless of our work conditions, and perhaps mor
 [Jay Kreps, Cloudera, 11 June 2015](https://vision.cloudera.com/apache-kafka-a-platform-for-real-time-data-streams-part-1/)
 
 {{% note %}}
-the pipelines we use to ingest data in many orgs are using immutable event stores
+the pipelines we use to ingest data in many orgs are using immutable event stores. this means that once data is written it's never really erased. if you're keeping the entire commit history then you're going to have a lot of problems with GDPR. (did you remember your backups?)
 {{% /note %}}
 
 ---
@@ -619,7 +619,7 @@ the pipelines we use to ingest data in many orgs are using immutable event store
 ![kafka](img/Kafka-per-user.png)
 
 {{% note %}}
-... per user encryption keys can be used to allow immutable infrastructures that are compatible with the "right to be forgotten"
+but with changes at the application level, we can make this work. for example, we can use per-user encryption keys for a stream. this way we have encryption at rest, which is great, but we've also made our immutable event infrastructure compatible with the "right to be forgotten": you delete the per-user key from the key store and the data is forever unreadable.
 {{% /note %}}
 
 ---
@@ -638,7 +638,16 @@ def should_brake(road):
 ```
 
 {{% note %}}
-we need to take responsibility for quality proportional to the risks involved with the software. this is obvious in self-driving cars
+we need to take responsibility for quality proportional to the risks involved with the software. certainly this is obvious in directly-life-impacting software like self-driving cars. we need to be part of the chain of safety around these systems.
+{{% /note %}}
+
+---
+
+# secure boot &
+# secure introduction
+
+{{% note %}}
+we need to take responsibility for having deep understanding of how the security of our systems are bootstrapped. in the case of IoT this means ensuring that your organization has the PKI infrastructure is in place to sign the bootloader and OS. in the case of backend services this means ensuring that interservice communication is secured by TLS bootstrapped by secret stores like Hashicorp Vault.
 {{% /note %}}
 
 ---
@@ -646,8 +655,7 @@ we need to take responsibility for quality proportional to the risks involved wi
 # ML models are state
 
 {{% note %}}
-our entire industry has unified around our worries about statefulness, but...
-ML is the ultimate stateful application. you're using software to generate these software models -- the entire application is a side-effect! how can we influence those side-effects?
+our entire industry has unified around our worries about statefulness. "run your applications as stateless containers! with k8s! let your cloud provider lock-in -- I mean securely host -- all your stateful applications!" But ML is the ultimate stateful application. you're using software to generate these software models and you ship those models. the entire application is a side-effect! how can we influence those side-effects?
 {{% /note %}}
 
 ---
@@ -657,7 +665,7 @@ ML is the ultimate stateful application. you're using software to generate these
 *https://ai.google/research/pubs/pub43146*
 
 {{% note %}}
-we desperately need better tooling to design-out unexpected behaviors in ML. The hidden feedback loops and undeclared consumers, and entangled data dependencies represent a side-channel source of technical debt. and it's the worst kind of technical debt -- it's "shadow debt" that's taken on unknowingly.
+we desperately need better tooling to design-out unexpected behaviors in ML. We have undeclared consumers, hidden "strange loops" of feedback, and entangled data dependencies. These represent a source of technical debt. and it's the worst kind of technical debt -- it's what John Allspaw and the SNAFUcatchers call "shadow debt" that's taken on unknowingly.
 {{% /note %}}
 
 ---
@@ -672,12 +680,16 @@ we desperately need better tooling to design-out unexpected behaviors in ML. The
 
 *[Martin Zinkevich (Google), Rules of Machine Learning: Best Practices for ML Engineering](https://developers.google.com/machine-learning/rules-of-ml/)*
 
+{{% note %}}
+we need to remember with any ML project that human judgement is required to connect the learned objectives to their impact with the real world -- our business, our industry, and the community as a whole
+{{% /note %}}
+
 ---
 
 # SQL > ML
 
 {{% note %}}
-first rule should always be: why are we choosing ML over some well-tuned SQL or other algorithm? are we choosing to use a method with chaotic feedback mechanisms instead of something that's simple and deterministic simply because of resume-driven development?
+first rule should always be: why are we choosing ML over some well-tuned SQL or other algorithm? why are we choosing to use a method with chaotic feedback mechanisms instead of something that's simple and deterministic? is this simply because of resume-driven development?
 {{% /note %}}
 
 ---
@@ -685,7 +697,7 @@ first rule should always be: why are we choosing ML over some well-tuned SQL or 
 ## models should be testable and human-interpretable
 
 {{% note %}}
-simple linear or logarithmic regression models are easier to debug, calibrate, and avoid feedback loops than models that try to optimize their own accuracy. combine features in human-understandable ways, remove unused features (which represent both technical debt and side-channel opportunities), quantify any observed undesirable behavior and build tests for it.
+when we do choose ML, we should choose our approach carefully. simple linear or logarithmic regression models are easier to debug, calibrate, and avoid unexpected feedback loops than models that try to optimize their own accuracy. when we combine dimensions into new features we should do so in human-understandable ways, remove unused features (which represent both technical debt and side-channel opportunities), and quantify any observed undesirable behavior and build tests for it. these represent avenues for adversarial input
 {{% /note %}}
 
 ---
@@ -693,7 +705,7 @@ simple linear or logarithmic regression models are easier to debug, calibrate, a
 # align training data with real world demographics
 
 {{% note %}}
-choose ML model inputs that reflect the population. this is win-win: align engineering ethics with business needs (ex. "if we pick machine vision training data that reflects real demographics, we can avoid the embarrassment for our organization of having to explain why our software acts racist.")
+choose ML training inputs that reflect the population. this is a fortunate case where we can easily align engineering ethics with business needs (ex. "if we pick machine vision training data that reflects real demographics, we can avoid the embarrassment for our organization of having to explain why our software acts racist.") win-win, eh?
 {{% /note %}}
 
 ---

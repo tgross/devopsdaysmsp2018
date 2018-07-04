@@ -800,7 +800,7 @@ waiting for &ldquo;the industry&rdquo; to fix it isn&rsquo;t working. we all, in
 
 <p><a href="https://vision.cloudera.com/apache-kafka-a-platform-for-real-time-data-streams-part-1/">Jay Kreps, Cloudera, 11 June 2015</a></p>
 
-<aside class="notes"><p>the pipelines we use to ingest data in many orgs are using immutable event stores</p>
+<aside class="notes"><p>the pipelines we use to ingest data in many orgs are using immutable event stores. this means that once data is written it&rsquo;s never really erased. if you&rsquo;re keeping the entire commit history then you&rsquo;re going to have a lot of problems with GDPR. (did you remember your backups?)</p>
 </aside>
 
 
@@ -812,7 +812,7 @@ waiting for &ldquo;the industry&rdquo; to fix it isn&rsquo;t working. we all, in
 
 <p><img src="img/Kafka-per-user.png" alt="kafka" /></p>
 
-<aside class="notes"><p>&hellip; per user encryption keys can be used to allow immutable infrastructures that are compatible with the &ldquo;right to be forgotten&rdquo;</p>
+<aside class="notes"><p>but with changes at the application level, we can make this work. for example, we can use per-user encryption keys for a stream. this way we have encryption at rest, which is great, but we&rsquo;ve also made our immutable event infrastructure compatible with the &ldquo;right to be forgotten&rdquo;: you delete the per-user key from the key store and the data is forever unreadable.</p>
 </aside>
 
 
@@ -832,7 +832,19 @@ waiting for &ldquo;the industry&rdquo; to fix it isn&rsquo;t working. we all, in
     return False
 </code></pre>
 
-<aside class="notes"><p>we need to take responsibility for quality proportional to the risks involved with the software. this is obvious in self-driving cars</p>
+<aside class="notes"><p>we need to take responsibility for quality proportional to the risks involved with the software. certainly this is obvious in directly-life-impacting software like self-driving cars. we need to be part of the chain of safety around these systems.</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="secure-boot">secure boot &amp;</h1>
+
+<h1 id="secure-introduction">secure introduction</h1>
+
+<aside class="notes"><p>we need to take responsibility for having deep understanding of how the security of our systems are bootstrapped. in the case of IoT this means ensuring that your organization has the PKI infrastructure is in place to sign the bootloader and OS. in the case of backend services this means ensuring that interservice communication is secured by TLS bootstrapped by secret stores like Hashicorp Vault.</p>
 </aside>
 
 
@@ -842,8 +854,7 @@ waiting for &ldquo;the industry&rdquo; to fix it isn&rsquo;t working. we all, in
 
 <h1 id="ml-models-are-state">ML models are state</h1>
 
-<aside class="notes"><p>our entire industry has unified around our worries about statefulness, but&hellip;
-ML is the ultimate stateful application. you&rsquo;re using software to generate these software models &ndash; the entire application is a side-effect! how can we influence those side-effects?</p>
+<aside class="notes"><p>our entire industry has unified around our worries about statefulness. &ldquo;run your applications as stateless containers! with k8s! let your cloud provider lock-in &ndash; I mean securely host &ndash; all your stateful applications!&rdquo; But ML is the ultimate stateful application. you&rsquo;re using software to generate these software models and you ship those models. the entire application is a side-effect! how can we influence those side-effects?</p>
 </aside>
 
 
@@ -855,7 +866,7 @@ ML is the ultimate stateful application. you&rsquo;re using software to generate
 
 <p><em><a href="https://ai.google/research/pubs/pub43146">https://ai.google/research/pubs/pub43146</a></em></p>
 
-<aside class="notes"><p>we desperately need better tooling to design-out unexpected behaviors in ML. The hidden feedback loops and undeclared consumers, and entangled data dependencies represent a side-channel source of technical debt. and it&rsquo;s the worst kind of technical debt &ndash; it&rsquo;s &ldquo;shadow debt&rdquo; that&rsquo;s taken on unknowingly.</p>
+<aside class="notes"><p>we desperately need better tooling to design-out unexpected behaviors in ML. We have undeclared consumers, hidden &ldquo;strange loops&rdquo; of feedback, and entangled data dependencies. These represent a source of technical debt. and it&rsquo;s the worst kind of technical debt &ndash; it&rsquo;s what John Allspaw and the SNAFUcatchers call &ldquo;shadow debt&rdquo; that&rsquo;s taken on unknowingly.</p>
 </aside>
 
 
@@ -875,6 +886,9 @@ ML is the ultimate stateful application. you&rsquo;re using software to generate
 
 <p><em><a href="https://developers.google.com/machine-learning/rules-of-ml/">Martin Zinkevich (Google), Rules of Machine Learning: Best Practices for ML Engineering</a></em></p>
 
+<aside class="notes"><p>we need to remember with any ML project that human judgement is required to connect the learned objectives to their impact with the real world &ndash; our business, our industry, and the community as a whole</p>
+</aside>
+
 
             </section>
           <section>
@@ -882,7 +896,7 @@ ML is the ultimate stateful application. you&rsquo;re using software to generate
 
 <h1 id="sql-ml">SQL &gt; ML</h1>
 
-<aside class="notes"><p>first rule should always be: why are we choosing ML over some well-tuned SQL or other algorithm? are we choosing to use a method with chaotic feedback mechanisms instead of something that&rsquo;s simple and deterministic simply because of resume-driven development?</p>
+<aside class="notes"><p>first rule should always be: why are we choosing ML over some well-tuned SQL or other algorithm? why are we choosing to use a method with chaotic feedback mechanisms instead of something that&rsquo;s simple and deterministic? is this simply because of resume-driven development?</p>
 </aside>
 
 
@@ -892,7 +906,7 @@ ML is the ultimate stateful application. you&rsquo;re using software to generate
 
 <h2 id="models-should-be-testable-and-human-interpretable">models should be testable and human-interpretable</h2>
 
-<aside class="notes"><p>simple linear or logarithmic regression models are easier to debug, calibrate, and avoid feedback loops than models that try to optimize their own accuracy. combine features in human-understandable ways, remove unused features (which represent both technical debt and side-channel opportunities), quantify any observed undesirable behavior and build tests for it.</p>
+<aside class="notes"><p>when we do choose ML, we should choose our approach carefully. simple linear or logarithmic regression models are easier to debug, calibrate, and avoid unexpected feedback loops than models that try to optimize their own accuracy. when we combine dimensions into new features we should do so in human-understandable ways, remove unused features (which represent both technical debt and side-channel opportunities), and quantify any observed undesirable behavior and build tests for it. these represent avenues for adversarial input</p>
 </aside>
 
 
@@ -902,7 +916,7 @@ ML is the ultimate stateful application. you&rsquo;re using software to generate
 
 <h1 id="align-training-data-with-real-world-demographics">align training data with real world demographics</h1>
 
-<aside class="notes"><p>choose ML model inputs that reflect the population. this is win-win: align engineering ethics with business needs (ex. &ldquo;if we pick machine vision training data that reflects real demographics, we can avoid the embarrassment for our organization of having to explain why our software acts racist.&rdquo;)</p>
+<aside class="notes"><p>choose ML training inputs that reflect the population. this is a fortunate case where we can easily align engineering ethics with business needs (ex. &ldquo;if we pick machine vision training data that reflects real demographics, we can avoid the embarrassment for our organization of having to explain why our software acts racist.&rdquo;) win-win, eh?</p>
 </aside>
 
 
