@@ -79,7 +79,7 @@
 <p>The opinions expressed in this talk are the speaker&rsquo;s alone and do not reflect the view of this conference, your employer, or my mom. Any reference to or citation of any person or organization does not constitute or imply an endorsement or recommendation of the content of this talk. The speaker is grossly unqualified to tell you how to live you life. Your mileage may vary. Not to be used in the manufacture of nuclear weapons. By attending this talk the speaker hereby grants you an irrevocable, perpetual, non-exclusive, transferable, worldwide license to be excellent to each other.</p>
 </blockquote>
 
-<aside class="notes"><p>why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? Why do we as engineers even need to discuss this stuff? &ldquo;Ethics is hard!&rdquo; &ldquo;C&rsquo;mon, I just want to code!&rdquo;</p>
+<aside class="notes"><p>why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? Why do we as engineers even need to discuss this stuff? &ldquo;Ethics is hard!&rdquo; &ldquo;C&rsquo;mon, I just want to code!&rdquo; Who am I, anyways? basically nobody. I&rsquo;m not an ethicist w/ a PhD, and even though I&rsquo;ve worked on ML and IoT projects, I&rsquo;m not some guru. and that&rsquo;s important because we <em>all</em> need to be talking about this stuff.</p>
 </aside>
 
 
@@ -840,11 +840,121 @@ waiting for &ldquo;the industry&rdquo; to fix it isn&rsquo;t working. we all, in
           <section>
               
 
-<h1 id="secure-boot">secure boot &amp;</h1>
+<h1 id="secure-boot">secure boot</h1>
 
-<h1 id="secure-introduction">secure introduction</h1>
+<aside class="notes"><p>we need to take responsibility for having deep understanding of how the security of our systems are bootstrapped. and we need to make decisions about that aligned with our values.</p>
+</aside>
 
-<aside class="notes"><p>we need to take responsibility for having deep understanding of how the security of our systems are bootstrapped. in the case of IoT this means ensuring that your organization has the PKI infrastructure is in place to sign the bootloader and OS. in the case of backend services this means ensuring that interservice communication is secured by TLS bootstrapped by secret stores like Hashicorp Vault.</p>
+
+            </section>
+          <section>
+              
+
+<p><img src="img/secureboot.jpg" alt="secure-boot" /></p>
+
+<p><em><a href="https://www.iconlabs.com/prod/products/device-protection/floodgate-secure-boot">https://www.iconlabs.com/prod/products/device-protection/floodgate-secure-boot</a></em></p>
+
+<aside class="notes"><p>in the case of IoT one of the options is secure boot.  you&rsquo;ll provide the factory where the product is assembled with the public keys you want to have loaded into your chip&rsquo;s trusted platform module. This makes it so that only <em>your</em> signed bootloader and OS can be loaded onto the device</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/vault.png" alt="Hashicorp Vault logo" /></p>
+
+<aside class="notes"><p>this means ensuring that your organization has PKI infrastructure in place to sign the bootloader and OS. get familiar with secret stores like Hashicorp Vault to build the foundation of this infrastructure</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/john_deere.png" alt="john_deere" /></p>
+
+<p><em><a href="https://motherboard.vice.com/en_us/article/xykkkd/why-american-farmers-are-hacking-their-tractors-with-ukrainian-firmware">Jason Koebler, Motherboard, 21 Mar 2017</a></em></p>
+
+<aside class="notes"><p>but there&rsquo;s a tradeoff here. if you have secure boot that means your users will find it that much more difficult (if not impossible) to modify and repair the device firmware. this is a business decision and a decision about values; not making a decision one way or another means abdicating your responsibility as an engineer</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="secure-communication">secure communication</h1>
+
+<aside class="notes"><p>when we deploy IoT devices we need to ensure we&rsquo;re taking advantage of modern TLS options. you wouldn&rsquo;t transmit the login form for your web application over plain text, right? (right?!)</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/cloudflare_tls_1-3.png" alt="cloudflare-blog-tls-1.3" /></p>
+
+<aside class="notes"><p>IoT devices typically have limited compute power, so folks avoid encryption. but we can solve this with modern choices: TLS1.3 reduces round-trips and elliptic curve keys use less memory than RSA keys. likewise, although you can cram MQTT into TLS, modern protocols like CoAP include mutually authenticated TLS.</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<h1 id="ml-models">ML models</h1>
+
+<aside class="notes"><p>what about our engineering decisions in ML?</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/neural_network.png" alt="neural-net" /></p>
+
+<p><a href="https://commons.wikimedia.org/wiki/File:Neural_network_bottleneck_achitecture.svg">https://commons.wikimedia.org/wiki/File:Neural_network_bottleneck_achitecture.svg</a></p>
+
+<aside class="notes"><p>let&rsquo;s look at one ML process called Convolutional Neural Net. each of the nodes in this diagram is just a function that takes a vector (an array) and runs a filter function over it (typically the filter itself will take a subset of the vector at a time).</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/iris_dataset.png" alt="iris-dataset-scatterplot" /></p>
+
+<p><a href="https://commons.wikimedia.org/wiki/File:Iris_dataset_scatterplot.svg">https://commons.wikimedia.org/wiki/File:Iris_dataset_scatterplot.svg</a></p>
+
+<aside class="notes"><p>iterating on the weights of those inputs allows us to extract &ldquo;features&rdquo; from the training inputs that result in &ldquo;interesting&rdquo; classifications (decisions).</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<p><img src="img/deep_neural_network.png" alt="deep-neural-net" /></p>
+
+<p><a href="https://cdn.edureka.co/blog/wp-content/uploads/2017/05/Deep-Neural-Network-What-is-Deep-Learning-Edureka.png">https://cdn.edureka.co/blog/wp-content/uploads/2017/05/Deep-Neural-Network-What-is-Deep-Learning-Edureka.png</a></p>
+
+<aside class="notes"><p>each layer builds on the layers that came before it. but these classifications are just regions in mathematical space here</p>
+</aside>
+
+
+            </section>
+          <section>
+              
+
+<pre><code class="language-python">def save(model, filename):
+    pickle.dump(model, open(filename, 'wb'))
+</code></pre>
+
+<aside class="notes"><p>and then when we&rsquo;re done training, we take the result of all those weights and call it our model and just serialize the whole damn thing and ship it to prod. we can pass real world data in through the same model and out comes the classifications.</p>
 </aside>
 
 
@@ -854,7 +964,7 @@ waiting for &ldquo;the industry&rdquo; to fix it isn&rsquo;t working. we all, in
 
 <h1 id="ml-models-are-state">ML models are state</h1>
 
-<aside class="notes"><p>our entire industry has unified around our worries about statefulness. &ldquo;run your applications as stateless containers! with k8s! let your cloud provider lock-in &ndash; I mean securely host &ndash; all your stateful applications!&rdquo; But ML is the ultimate stateful application. you&rsquo;re using software to generate these software models and you ship those models. the entire application is a side-effect! how can we influence those side-effects?</p>
+<aside class="notes"><p>our entire industry has unified around our worries about statefulness. &ldquo;run your applications as stateless containers! with k8s! let your cloud provider lock-in &ndash; I mean securely host &ndash; all your stateful applications!&rdquo; But ML is the ultimate stateful application. you&rsquo;re using software to generate these software models and you ship those models. let&rsquo;s get the Functional Programming crowd in a twist: the entire application is a side-effect! how can we influence those side-effects?</p>
 </aside>
 
 
@@ -906,7 +1016,7 @@ waiting for &ldquo;the industry&rdquo; to fix it isn&rsquo;t working. we all, in
 
 <h2 id="models-should-be-testable-and-human-interpretable">models should be testable and human-interpretable</h2>
 
-<aside class="notes"><p>when we do choose ML, we should choose our approach carefully. simple linear or logarithmic regression models are easier to debug, calibrate, and avoid unexpected feedback loops than models that try to optimize their own accuracy. when we combine dimensions into new features we should do so in human-understandable ways, remove unused features (which represent both technical debt and side-channel opportunities), and quantify any observed undesirable behavior and build tests for it. these represent avenues for adversarial input</p>
+<aside class="notes"><p>when we do choose ML, we should choose our approach carefully. simple linear or logarithmic regression models are easier to debug, calibrate, and avoid unexpected feedback loops than models that try to optimize their own accuracy. remove unused features (which represent both technical debt and side-channel opportunities), and quantify any observed undesirable behavior and build tests for it. these pieces of technical debt all represent avenues for adversarial input</p>
 </aside>
 
 

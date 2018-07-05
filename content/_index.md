@@ -37,7 +37,7 @@ an alternate title could be...
 > The opinions expressed in this talk are the speaker's alone and do not reflect the view of this conference, your employer, or my mom. Any reference to or citation of any person or organization does not constitute or imply an endorsement or recommendation of the content of this talk. The speaker is grossly unqualified to tell you how to live you life. Your mileage may vary. Not to be used in the manufacture of nuclear weapons. By attending this talk the speaker hereby grants you an irrevocable, perpetual, non-exclusive, transferable, worldwide license to be excellent to each other.
 
 {{% note %}}
-why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? Why do we as engineers even need to discuss this stuff? "Ethics is hard!" "C'mon, I just want to code!"
+why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? Why do we as engineers even need to discuss this stuff? "Ethics is hard!" "C'mon, I just want to code!" Who am I, anyways? basically nobody. I'm not an ethicist w/ a PhD, and even though I've worked on ML and IoT projects, I'm not some guru. and that's important because we *all* need to be talking about this stuff.
 {{% /note %}}
 
 ---
@@ -643,11 +643,104 @@ we need to take responsibility for quality proportional to the risks involved wi
 
 ---
 
-# secure boot &
-# secure introduction
+# secure boot
 
 {{% note %}}
-we need to take responsibility for having deep understanding of how the security of our systems are bootstrapped. in the case of IoT this means ensuring that your organization has the PKI infrastructure is in place to sign the bootloader and OS. in the case of backend services this means ensuring that interservice communication is secured by TLS bootstrapped by secret stores like Hashicorp Vault.
+we need to take responsibility for having deep understanding of how the security of our systems are bootstrapped. and we need to make decisions about that aligned with our values.
+{{% /note %}}
+
+---
+
+![secure-boot](img/secureboot.jpg)
+
+*https://www.iconlabs.com/prod/products/device-protection/floodgate-secure-boot*
+
+{{% note %}}
+in the case of IoT one of the options is secure boot.  you'll provide the factory where the product is assembled with the public keys you want to have loaded into your chip's trusted platform module. This makes it so that only *your* signed bootloader and OS can be loaded onto the device
+
+{{% /note %}}
+
+---
+
+![Hashicorp Vault logo](img/vault.png)
+
+{{% note %}}
+this means ensuring that your organization has PKI infrastructure in place to sign the bootloader and OS. get familiar with secret stores like Hashicorp Vault to build the foundation of this infrastructure
+{{% /note %}}
+
+---
+
+![john_deere](img/john_deere.png)
+
+*[Jason Koebler, Motherboard, 21 Mar 2017](https://motherboard.vice.com/en_us/article/xykkkd/why-american-farmers-are-hacking-their-tractors-with-ukrainian-firmware)*
+
+{{% note %}}
+but there's a tradeoff here. if you have secure boot that means your users will find it that much more difficult (if not impossible) to modify and repair the device firmware. this is a business decision and a decision about values; not making a decision one way or another means abdicating your responsibility as an engineer
+{{% /note %}}
+
+---
+
+# secure communication
+
+{{% note %}}
+when we deploy IoT devices we need to ensure we're taking advantage of modern TLS options. you wouldn't transmit the login form for your web application over plain text, right? (right?!)
+{{% /note %}}
+
+---
+
+![cloudflare-blog-tls-1.3](img/cloudflare_tls_1-3.png)
+
+{{% note %}}
+IoT devices typically have limited compute power, so folks avoid encryption. but we can solve this with modern choices: TLS1.3 reduces round-trips and elliptic curve keys use less memory than RSA keys. likewise, although you can cram MQTT into TLS, modern protocols like CoAP include mutually authenticated TLS.
+{{% /note %}}
+
+---
+
+# ML models
+
+{{% note %}}
+what about our engineering decisions in ML?
+{{% /note %}}
+
+---
+
+![neural-net](img/neural_network.png)
+
+https://commons.wikimedia.org/wiki/File:Neural_network_bottleneck_achitecture.svg
+
+{{% note %}}
+let's look at one ML process called Convolutional Neural Net. each of the nodes in this diagram is just a function that takes a vector (an array) and runs a filter function over it (typically the filter itself will take a subset of the vector at a time).
+{{% /note %}}
+
+---
+
+![iris-dataset-scatterplot](img/iris_dataset.png)
+
+https://commons.wikimedia.org/wiki/File:Iris_dataset_scatterplot.svg
+
+{{% note %}}
+iterating on the weights of those inputs allows us to extract "features" from the training inputs that result in "interesting" classifications (decisions).
+{{% /note %}}
+
+---
+
+![deep-neural-net](img/deep_neural_network.png)
+
+https://cdn.edureka.co/blog/wp-content/uploads/2017/05/Deep-Neural-Network-What-is-Deep-Learning-Edureka.png
+
+{{% note %}}
+each layer builds on the layers that came before it. but these classifications are just regions in mathematical space here
+{{% /note %}}
+
+---
+
+```python
+def save(model, filename):
+    pickle.dump(model, open(filename, 'wb'))
+```
+
+{{% note %}}
+and then when we're done training, we take the result of all those weights and call it our model and just serialize the whole damn thing and ship it to prod. we can pass real world data in through the same model and out comes the classifications.
 {{% /note %}}
 
 ---
@@ -655,7 +748,7 @@ we need to take responsibility for having deep understanding of how the security
 # ML models are state
 
 {{% note %}}
-our entire industry has unified around our worries about statefulness. "run your applications as stateless containers! with k8s! let your cloud provider lock-in -- I mean securely host -- all your stateful applications!" But ML is the ultimate stateful application. you're using software to generate these software models and you ship those models. the entire application is a side-effect! how can we influence those side-effects?
+our entire industry has unified around our worries about statefulness. "run your applications as stateless containers! with k8s! let your cloud provider lock-in -- I mean securely host -- all your stateful applications!" But ML is the ultimate stateful application. you're using software to generate these software models and you ship those models. let's get the Functional Programming crowd in a twist: the entire application is a side-effect! how can we influence those side-effects?
 {{% /note %}}
 
 ---
@@ -697,7 +790,7 @@ first rule should always be: why are we choosing ML over some well-tuned SQL or 
 ## models should be testable and human-interpretable
 
 {{% note %}}
-when we do choose ML, we should choose our approach carefully. simple linear or logarithmic regression models are easier to debug, calibrate, and avoid unexpected feedback loops than models that try to optimize their own accuracy. when we combine dimensions into new features we should do so in human-understandable ways, remove unused features (which represent both technical debt and side-channel opportunities), and quantify any observed undesirable behavior and build tests for it. these represent avenues for adversarial input
+when we do choose ML, we should choose our approach carefully. simple linear or logarithmic regression models are easier to debug, calibrate, and avoid unexpected feedback loops than models that try to optimize their own accuracy. remove unused features (which represent both technical debt and side-channel opportunities), and quantify any observed undesirable behavior and build tests for it. these pieces of technical debt all represent avenues for adversarial input
 {{% /note %}}
 
 ---
