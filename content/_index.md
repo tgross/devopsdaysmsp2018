@@ -42,7 +42,7 @@ why is it especially important to talk about ethics when we start talking about 
 
 ---
 
-![uber-self-driving](img/uber-accident.png)
+![Washington Post: NTSB finds self-driving Uber did not have emergency braking turned on](img/uber-accident.png)
 
 *[Michael Laris, Washington Post, 24 May 2018](https://www.washingtonpost.com/news/dr-gridlock/wp/2018/05/24/ntsb-self-driving-uber-did-not-have-emergency-braking-turned-on/)*
 
@@ -53,7 +53,7 @@ Back in March a self-driving car operated by Uber killed a pedestrian. The NTSB 
 
 ---
 
-![microsoft-chatbot](img/microsoft-chatbot.png)
+![The Verge: Twitter taught Microsoft's Tay Chatbot to be a racist asshole in less than a day](img/microsoft-chatbot.png)
 
 *[James Vincent, The Verge, 24 Mar 2016](https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist)*
 
@@ -63,7 +63,7 @@ A couple years ago, MSFT demonstrated their ML capabilities with the Tay chatbot
 
 ---
 
-![uk-ransomware](img/uk-ransomware.png)
+![The Verge: UK hospitals hit with massive ransomware attack](img/uk-ransomware.png)
 
 *[Russell Brandom, The Verge, 12 May 2017](https://www.theverge.com/2017/5/12/15630354/nhs-hospitals-ransomware-hack-wannacry-bitcoin)*
 
@@ -73,7 +73,7 @@ in an IoT example, last year countless devices in UK hospitals were taken over b
 
 ---
 
-![tesla-autopilot](img/tesla-autopilot.png)
+![The Guardian: Tesla car that crashed and killed driver was running on Autopilot, firm says](img/tesla-autopilot.png)
 
 *[The Guardian, 31 Mar 2018](https://www.theguardian.com/technology/2018/mar/31/tesla-car-crash-autopilot-mountain-view)*
 
@@ -83,7 +83,7 @@ Tesla's autopilot has been implicated in the deaths of several drivers at this p
 
 ---
 
-![target-pregnant](img/target-pregnant.png)
+![Forbes: How Target Figured Out a Teen Girl Was Pregnant Before Her Father Did](img/target-pregnant.png)
 
 *[Kashmir Hill, Forbes, 16 Feb 2012](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/)*
 
@@ -93,7 +93,7 @@ Machine learning algorithms may know more about us and our loved ones than we do
 
 ---
 
-![google-racist-autotag](img/google-racist-autotag.png)
+![The Guardian: Google says sorry for racist auto-tag in photo app](img/google-racist-autotag.png)
 
 *[Jana Kasperkevic, The Guardian, 1 Jul 2015](https://www.theguardian.com/technology/2015/jul/01/google-sorry-racist-auto-tag-photo-app)*
 
@@ -102,8 +102,8 @@ ML is simultaneously unconsciously encoding our biases. (This one was so bad tha
 {{% /note %}}
 
 ---
-![defeat-the-baby](img/defeat-the-baby.png)
-  *
+![@yipe on Twitter: "Alexa: remind me to feed the baby" (response: "Defeat the baby")](img/defeat-the-baby.png)
+
 *https://twitter.com/yipe/status/1005555741153902592*
 
 {{% note %}}
@@ -112,7 +112,7 @@ we've invited these systems into our homes... (and ok, yeah this is funny)
 
 ---
 
-![alexa-eavesdropping](img/alexa-eavesdropping.png)
+![Huffington Post: Amazon Alexa-Powered Device Recorded and Shared User's Conversation Without Permission](img/alexa-eavesdropping.png)
 
 *[Laura Stevens, Huffington Post, 24 May 2018](https://www.huffingtonpost.com/entry/alexa-eavesdropping-portland-familiy_us_5b0727cae4b0fdb2aa51b23e)*
 
@@ -122,7 +122,7 @@ we've invited these systems into our homes... (and ok, yeah this is funny)
 
 ---
 
-![marco](img/marco-rogers.png)
+![@polotek on Twitter: "Kalanick keeps asking for unethical/illegal things, but at some point we have to talk about how engineers at Uber keep saying yes."](img/marco-rogers.png)
 
 {{% note %}}
 what all these stories have in common is that like any other failure there's almost certainly no "root cause"; it's unlikely that anyone at these companies set out with awful intentions. It's a complex combination of socio-technical systems and the incentives they set up. But at the end of the day, it's people in our industry -- the people in this room -- who are the ones who execute and implement these systems
@@ -154,13 +154,13 @@ but the scope of machine learning and IoT is incomprehensible to ordinary users.
 
 ---
 
-![in_X_lines](img/in_X_lines_01.png)
-{{% fragment %}}![in_X_lines](img/in_X_lines_02.png){{% /fragment %}}
-{{% fragment %}}![in_X_lines](img/in_X_lines_03.png){{% /fragment %}}
-{{% fragment %}}![in_X_lines](img/in_X_lines_04.png){{% /fragment %}}
-{{% fragment %}}![in_X_lines](img/in_X_lines_05.png){{% /fragment %}}
-{{% fragment %}}![in_X_lines](img/in_X_lines_06.png){{% /fragment %}}
-{{% fragment %}}![in_X_lines](img/in_X_lines_07.png){{% /fragment %}}
+!["in X lines of Python"](img/in_X_lines_01.png)
+{{% fragment %}}!["in X lines of Python"](img/in_X_lines_02.png){{% /fragment %}}
+{{% fragment %}}!["in X lines of Python"](img/in_X_lines_03.png){{% /fragment %}}
+{{% fragment %}}!["in X lines of Python"](img/in_X_lines_04.png){{% /fragment %}}
+{{% fragment %}}!["in X lines of Python"](img/in_X_lines_05.png){{% /fragment %}}
+{{% fragment %}}!["in X lines of Python"](img/in_X_lines_06.png){{% /fragment %}}
+{{% fragment %}}!["in X lines of Python"](img/in_X_lines_07.png){{% /fragment %}}
 
 {{% note %}}
 what also makes ML and IoT especially problematic is that their inherent complexity is not being respected, only their results. amateurish engineering: "easy machine learning in 100 lines of Python!". maybe ML tools are reasonably well-understood by the elite developers of the best organizations, but *many* users of ML treat the tools as magic and the models as binary blobs: a black box into which numbers go and decisions come out.
@@ -168,7 +168,7 @@ what also makes ML and IoT especially problematic is that their inherent complex
 
 ---
 
-![ugly-t-shirt](img/ugly-t-shirt.jpg)
+![picture of a ugly t-shirt that fools facial recognition](img/ugly-t-shirt.jpg)
 
 *[Robison Meyer, The Atlantic, 3 Oct 2013](https://www.theatlantic.com/technology/archive/2013/10/avoid-facial-detection-algorithms-with-a-t-shirt/280253/)*
 
@@ -179,7 +179,7 @@ because ML is poorly understood, attacks on it can have open-ended results. mayb
 
 ---
 
-![face-recognition-glasses](img/face-recognition-glasses.png)
+![Verge: These glasses trick facial recongition software into thinking you're someone else](img/face-recognition-glasses.png)
 
 *[James Vincent, The Verge, 3 Nov 2016](https://www.theverge.com/2016/11/3/13507542/facial-recognition-glasses-trick-impersonate-fool)*
 
@@ -189,7 +189,7 @@ because ML is poorly understood, attacks on it can have open-ended results. mayb
 
 ---
 
-![adversarial-toaster](img/adversarial-toaster.png)
+![picture of an adversarial sticker that fools machine vision into thinking any object is a toaster](img/adversarial-toaster.png)
 
 *[James Vincent, The Verge, 3 Jan 2018](https://www.theverge.com/2018/1/3/16844842/ai-computer-vision-trick-adversarial-patches-google)*
 
@@ -199,7 +199,7 @@ what happens when a banana looks, not like a toaster, but a bomb or weapon? when
 
 ---
 
-![road-signs](img/road-signs.png)
+![New Stack: Camouflaged Griffit on Road Signs Can Fool Machine Learning Models](img/road-signs.png)
 
 *[Kimberly Mok, The New Stack, 14 Sep 2017](https://thenewstack.io/camouflaged-graffiti-road-signs-can-fool-machine-learning-models/)*
 
@@ -227,7 +227,7 @@ if you thought the enterprise was bad: they're still shipping devices with share
 
 ---
 
-![hawkbit](img/hawkbit-logo.png)
+![Hawkbit logo](img/hawkbit-logo.png)
 
 *http://www.eclipse.org/hawkbit/*
 
@@ -237,7 +237,7 @@ existing solutions for IoT Over-the-Air updates (OTA) are mostly research projec
 
 ---
 
-![aws-iot](img/aws-iot.png)
+![diagram of AWS IoT products](img/aws-iot.png)
 
 *[Robert McCauley, Alexa Blogs, 3 May 2016](https://developer.amazon.com/de/blogs/post/Tx3828JHC7O9GZ9/Using-Alexa-Skills-Kit-and-AWS-IoT-to-Voice-Control-Connected-Devices)*
 
@@ -256,7 +256,7 @@ the problem with our complacency on this as an industry is that it invites someo
 
 ---
 
-![congress](img/congress.jpg)
+![stock image photo of US Congress](img/congress.jpg)
 
 *https://www.brookings.edu/wp-content/uploads/2016/06/congress006-1.jpg*
 
@@ -276,7 +276,7 @@ we've seen this over and over again. look at the evergreen fights over encryptio
 
 ---
 
-![series-of-tubes](img/series-of-tubes.png)
+![caption of Senator Ted Stevens "series of tubes" remarks](img/series-of-tubes.png)
 
 *https://imgur.com/gallery/2mIObIu*
 
@@ -286,7 +286,7 @@ This is particularly a problem here in the US where virtually all our lawmakers 
 
 ---
 
-![ajit-pai](img/ajit-pai.png)
+![intentionally unflattering picture of FCC Chairman Ajit Pai](img/ajit-pai.png)
 
 *[Terrence O'Brien, engadget, 18 May 2017](https://www.engadget.com/2017/05/18/fcc-chairman-net-neutrality-1996/)*
 
@@ -314,7 +314,7 @@ everyone here want to carry malpractice insurance?
 
 ---
 
-![gdpr-block](img/gdpr-block.png)
+![Apibility: GDPR for lazy people: block all European users with Cloudflare workers](img/gdpr-block.png)
 
 *https://apility.io/2018/05/25/gdpr-lazy-block-european-users-cloudflare-workers/*
 
@@ -324,7 +324,7 @@ but even in the face of reasonable privacy law like the GDPR, we've seen our ind
 
 ---
 
-![gdpr-hackernews](img/gdpr-hackernews.png)
+![screenshot of childish HackerNews comment](img/gdpr-hackernews.png)
 
 *https://news.ycombinator.com/item?id=16954306*
 
@@ -334,7 +334,7 @@ top post on The Orange Site: "what many posters here miss is that a big group of
 
 ---
 
-![gdpr-internet-of-shit](img/gdpr-internet-of-shit.png)
+![@internetofshit on Twitter: "Hi just letting you know you can't use your lights anymore because we're slathering your data around and GDPR is here"](img/gdpr-internet-of-shit.png)
 
 *https://twitter.com/internetofshit/status/999619364541394944*
 
@@ -344,7 +344,7 @@ on the other hand, if this is what organizations are doing...
 
 ---
 
-![gdpr-unrollme](img/gdpr-unrollme.png)
+![TechCrunch: Unroll.me to close to EU users saying it can't comply with GDPR](img/gdpr-unrollme.png)
 
 *[Natasha Lomas, Tech Crunch, 5 May 2018](https://techcrunch.com/2018/05/05/unroll-me-to-close-to-eu-users-saying-it-cant-comply-with-gdpr/)*
 
@@ -401,7 +401,7 @@ But consent has some limits once we get a lot more people involved. Although ind
 
 ---
 
-![vaccines](img/vaccines.jpg)
+![cartoon of anti-vaxxer releasing a monster](img/vaccines.jpg)
 
 *[Steve Sack, Star Tribune, 27 Jan 2015](http://www.startribune.com/sack-cartoon-vaccinations/289998831/)*
 
@@ -411,7 +411,7 @@ We expect everyone to pay their taxes. We ask that people are vaccinated. And th
 
 ---
 
-![kelo-house](img/kelo-vs-new-london.png)
+![Washington Post: The story behind Kelo v City of New London](img/kelo-vs-new-london.png)
 
 *[Ilya Somin, Washington Post, 29 May 2015](https://www.washingtonpost.com/news/volokh-conspiracy/wp/2015/05/29/the-story-behind-the-kelo-case-how-an-obscure-takings-case-came-to-shock-the-conscience-of-the-nation/)*
 
@@ -421,7 +421,7 @@ whereas in the US we have a mixed bag where businesses (which are supposed to be
 
 ---
 
-![gdpr-tumblr](img/tumblr-gdpr.png)
+![@Millstab on Twitter: "Some seriously unethical UX design from @tumblr - forcing anyone to untick 350+ boxes in order to prevent EACH INDIVIDUAL AD COMPANY from using our data. Taking the piss."](img/tumblr-gdpr.png)
 
 *https://twitter.com/Millstab/status/999762424994594817*
 
@@ -431,7 +431,7 @@ this is the flaw of the consent model as a solution. we saw that side-channel in
 
 ---
 
-![externality](img/externality-definition.png)
+![Google-supplied definition of externality](img/externality-definition.png)
 
 *https://www.google.com/search?q=externality*
 
@@ -449,7 +449,7 @@ ethical definitions vary b/c values vary (ex. that balance of community vs indiv
 
 ---
 
-![sonia-1](img/sonia-1.png)
+![@soniagupta504 on Twitter: "Lawyers and doctors enter their professions knowing, from the outset, just how heavy their burdens are. They hold human rights and life in their hands."](img/sonia-1.png)
 
 *https://twitter.com/soniagupta504/status/1011591288003575808*
 
@@ -459,7 +459,7 @@ Sonia (who was up here on stage last night): "Lawyers and doctors enter their pr
 
 ---
 
-![sonia-2](img/sonia-2.png)
+![@soniagupta504 on Twitter: "highly impactful professions know that their limits must be more stringent"](img/sonia-2.png)
 
 *https://twitter.com/soniagupta504/status/1011591288003575808*
 
@@ -540,7 +540,7 @@ waiting for "the industry" to fix it isn't working. we all, individually, are th
 
 ---
 
-![microsoft-employees-ice](img/microsoft-employees-ice.png)
+![ArsTechnica: Microsoft staff call on company to end ICE contract](img/microsoft-employees-ice.png)
 
 *[Peter Bright, Ars Technica, 20 Jun 2018](https://arstechnica.com/tech-policy/2018/06/microsoft-staff-call-on-company-to-end-ice-contract/)*
 
@@ -550,7 +550,7 @@ we can influence the organization. we see Microsoft employees pushing for change
 
 ---
 
-![google-employees-military](img/google-employees-military.png)
+![Reuters: Google to scrub US military deal protested by employees](img/google-employees-military.png)
 
 *[Paresh Dave and Heather Somerville, Reuters, 1 Jun 2018](https://www.reuters.com/article/uk-alphabet-defense/google-to-scrub-u-s-military-deal-protested-by-employees-source-idUKKCN1IX5YC)*
 
@@ -560,7 +560,7 @@ we've seen successful protest by Googlers motivated by their conscience
 
 ---
 
-![amazon-employees-law-enforcement](img/amazon-employees-law-enforcement.png)
+![Gizmodo: Amazon Workers Demand Jeff Bezos Cancel Face Recognition Contracts With Law Enforcement](img/amazon-employees-law-enforcement.png)
 
 *[Kate Conger, Gizmodo, 21 Jun 2018](https://gizmodo.com/amazon-workers-demand-jeff-bezos-cancel-face-recognitio-1827037509)*
 
@@ -604,7 +604,7 @@ what is available to everyone regardless of our work conditions, and perhaps mor
 
 ## Immutable?
 
-![kafka](img/Kafka.png)
+![diagram of Apache Kafka commit log and typical consumers](img/Kafka.png)
 
 [Jay Kreps, Cloudera, 11 June 2015](https://vision.cloudera.com/apache-kafka-a-platform-for-real-time-data-streams-part-1/)
 
@@ -616,7 +616,7 @@ the pipelines we use to ingest data in many orgs are using immutable event store
 
 ## "Immutable"
 
-![kafka](img/Kafka-per-user.png)
+![diagram of Apache Kafka commit log and typical consumers, with per-user encryption keys](img/Kafka-per-user.png)
 
 {{% note %}}
 but with changes at the application level, we can make this work. for example, we can use per-user encryption keys for a stream. this way we have encryption at rest, which is great, but we've also made our immutable event infrastructure compatible with the "right to be forgotten": you delete the per-user key from the key store and the data is forever unreadable.
@@ -651,7 +651,7 @@ we need to take responsibility for having deep understanding of how the security
 
 ---
 
-![secure-boot](img/secureboot.jpg)
+![diagram showing secure boot stages](img/secureboot.jpg)
 
 *https://www.iconlabs.com/prod/products/device-protection/floodgate-secure-boot*
 
@@ -670,12 +670,12 @@ this means ensuring that your organization has PKI infrastructure in place to si
 
 ---
 
-![john_deere](img/john_deere.png)
+![Motherboard: Why American Farmers Are Hacking Their Tractors With Ukranian Firmware](img/john_deere.png)
 
 *[Jason Koebler, Motherboard, 21 Mar 2017](https://motherboard.vice.com/en_us/article/xykkkd/why-american-farmers-are-hacking-their-tractors-with-ukrainian-firmware)*
 
 {{% note %}}
-but there's a tradeoff here. if you have secure boot that means your users will find it that much more difficult (if not impossible) to modify and repair the device firmware. this is a business decision and a decision about values; not making a decision one way or another means abdicating your responsibility as an engineer
+but there's a tradeoff here. if you have secure boot that means your users will find it that much more difficult (if not impossible) to modify and repair the device firmware. this is a business decision and a decision about values; maybe the answer is different if the end user is a consumer vs a business? not making a decision one way or another means abdicating your responsibility as an engineer
 {{% /note %}}
 
 ---
@@ -688,7 +688,7 @@ when we deploy IoT devices we need to ensure we're taking advantage of modern TL
 
 ---
 
-![cloudflare-blog-tls-1.3](img/cloudflare_tls_1-3.png)
+![CloudFlare blog: TLS1.3 is going to save us all, and other reasons why IoT is still insecure](img/cloudflare_tls_1-3.png)
 
 {{% note %}}
 IoT devices typically have limited compute power, so folks avoid encryption. but we can solve this with modern choices: TLS1.3 reduces round-trips and elliptic curve keys use less memory than RSA keys. likewise, although you can cram MQTT into TLS, modern protocols like CoAP include mutually authenticated TLS.
@@ -704,7 +704,7 @@ what about our engineering decisions in ML?
 
 ---
 
-![neural-net](img/neural_network.png)
+![diagram of a simple neural network](img/neural_network.png)
 
 https://commons.wikimedia.org/wiki/File:Neural_network_bottleneck_achitecture.svg
 
@@ -714,7 +714,7 @@ let's look at one ML process called Convolutional Neural Net. each of the nodes 
 
 ---
 
-![iris-dataset-scatterplot](img/iris_dataset.png)
+![scatterplot of the classic public Iris dataset](img/iris_dataset.png)
 
 https://commons.wikimedia.org/wiki/File:Iris_dataset_scatterplot.svg
 
@@ -724,7 +724,7 @@ iterating on the weights of those inputs allows us to extract "features" from th
 
 ---
 
-![deep-neural-net](img/deep_neural_network.png)
+![diagram of a deep neural net with multiple stages shown](img/deep_neural_network.png)
 
 https://cdn.edureka.co/blog/wp-content/uploads/2017/05/Deep-Neural-Network-What-is-Deep-Learning-Edureka.png
 
@@ -753,7 +753,7 @@ our entire industry has unified around our worries about statefulness. "run your
 
 ---
 
-![machine-learning-tech-debt](img/machine-learning-tech-debt.png)
+![Google AI whitepaper: Machine Learning, the High Interest Credit Card of Technical Debt](img/machine-learning-tech-debt.png)
 
 *https://ai.google/research/pubs/pub43146*
 
@@ -819,21 +819,21 @@ we can't rely on project managers or business analysts to take the lead on desig
 
 ---
 
-![jira-clock-puncher](img/jira-clock-puncher.png)
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
-{{% fragment %}}![jira-clock-puncher](img/jira-clock-puncher.png){{% /fragment %}}
+![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png)
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
+{{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
 
 {{% note %}}
 formal Agile methodologies contribute to the problem. "act ethically" doesn't have any story points in this epic. But you're supposed to be a professional, not a JIRA clock puncher. act like it!
