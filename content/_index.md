@@ -34,7 +34,7 @@ an alternate title could be...
 
 > We've updated our privacy policy!
 
-> Any reference to or citation of any person or organization does not constitute or imply an endorsement or recommendation of the content of this talk. The opinions expressed in this talk are the speaker's alone and do not reflect the view of this conference, your employer, or my mom. The speaker is grossly unqualified to tell you how to live you life. Your mileage may vary. Not to be used in the manufacture of nuclear weapons. By attending this talk the speaker hereby grants you an irrevocable, perpetual, non-exclusive, transferable, worldwide license to be excellent to each other.
+> Any reference to or citation of any person or organization does not constitute or imply an endorsement or recommendation of the content of this talk. The opinions expressed in this talk are the speaker's alone and do not reflect the view of this conference, your employer, or my mom. The speaker is grossly unqualified to tell you how to live your life. Your mileage may vary. Not to be used in the manufacture of nuclear weapons. By attending this talk the speaker hereby grants you an irrevocable, perpetual, non-exclusive, transferable, worldwide license to be excellent to each other.
 
 {{% note %}}
 why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? Why do we as engineers even need to discuss this stuff? "Ethics is hard!" "C'mon, I just want to code!" Who am I, anyways? basically nobody; I'm not an ethicist w/ a PhD. and that's important because we *all* need to be talking about this stuff.
@@ -567,6 +567,17 @@ we've seen successful protest by Googlers motivated by their conscience
 
 {{% note %}}
 and we've seen Amazon employees pushing for change
+{{% /note %}}
+
+---
+
+
+![Tech Workers Coalition: Worker Power in the Tech Industry](img/techworkerscoalition.png)
+
+https://techworkerscoalition.org/
+
+{{% note %}}
+there are activist organizations that have sprung up in the last few years looking to push for broader change across many organizations, like the Tech Workers Coalition
 {{% /note %}}
 
 ---
