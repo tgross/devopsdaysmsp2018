@@ -498,7 +498,7 @@ historically licensing and professional organizations (ex. AMA, AIA, ASME, bar a
 # licensing requires monopoly
 
 {{% note %}}
-professional certification w/o the consequences of regulation is basically toothless. we see lots and lots of useless rent-seeking certifications today already (CompTIA, Project Management Institute). it's worth considering what the side-effects of regulation-supported monopoly would be.
+certifications do exist. we see lots and lots of useless rent-seeking certifications today already (CompTIA, Project Management Institute). but professional certification w/o the consequences of regulation is basically toothless.  so before we get the government involved, it's worth considering what the side-effects of regulation-supported monopoly would be.
 {{% /note %}}
 
 ---
@@ -847,7 +847,7 @@ formal Agile methodologies contribute to the problem. "act ethically" doesn't ha
 *[Anne Currie, The Register, 1 Mar 2018](https://www.theregister.co.uk/2018/03/01/ethics_yeah_thats_great_but_do_they_scale/)*
 
 {{% note %}}
-leave you with...
+leave you with this from Anne Currie at ContainerSolutions, who are holding a conference on ethics in technology this week. "We aren't a craft anymore. We might feel like artisans with laptops but what we produce could potentially be in front of a signicant chunk of humanity by lunchtime."
 {{% /note %}}
 
 ---
