@@ -179,7 +179,7 @@ because ML's chaotic behavior is poorly understood, attacks on it can have open-
 
 ---
 
-![Verge: These glasses trick facial recongition software into thinking you're someone else](img/face-recognition-glasses.png)
+![Verge: These glasses trick facial recognition software into thinking you're someone else](img/face-recognition-glasses.png)
 
 *[James Vincent, The Verge, 3 Nov 2016](https://www.theverge.com/2016/11/3/13507542/facial-recognition-glasses-trick-impersonate-fool)*
 
@@ -199,7 +199,7 @@ what happens when a banana looks, not like a toaster, but a bomb or weapon? when
 
 ---
 
-![New Stack: Camouflaged Griffit on Road Signs Can Fool Machine Learning Models](img/road-signs.png)
+![New Stack: Camouflaged Graffiti on Road Signs Can Fool Machine Learning Models](img/road-signs.png)
 
 *[Kimberly Mok, The New Stack, 14 Sep 2017](https://thenewstack.io/camouflaged-graffiti-road-signs-can-fool-machine-learning-models/)*
 
