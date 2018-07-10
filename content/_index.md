@@ -37,7 +37,7 @@ an alternate title could be...
 > Any reference to or citation of any person or organization does not constitute or imply an endorsement or recommendation of the content of this talk. The opinions expressed in this talk are the speaker's alone and do not reflect the view of this conference, your employer, or my mom. The speaker is grossly unqualified to tell you how to live your life. Your mileage may vary. Not to be used in the manufacture of nuclear weapons. By attending this talk the speaker hereby grants you an irrevocable, perpetual, non-exclusive, transferable, worldwide license to be excellent to each other.
 
 {{% note %}}
-why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? Why do we as engineers even need to discuss this stuff? "Ethics is hard!" "C'mon, I just want to code!" Who am I, anyways? basically nobody; I'm not an ethicist w/ a PhD. and that's important because we *all* need to be talking about this stuff.
+"Are we going to talk about the trolley dillema again? C'mon, I just want to code!" Why do we as engineers need to discuss this stuff? Who am I, anyways? basically nobody; I'm not an ethicist w/ a PhD. why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? the reason we *all* need to be talking about this because of the real world impact.
 {{% /note %}}
 
 ---
@@ -163,7 +163,7 @@ but the scope of machine learning and IoT is incomprehensible to ordinary users.
 {{% fragment %}}!["in X lines of Python"](img/in_X_lines_07.png){{% /fragment %}}
 
 {{% note %}}
-what also makes ML and IoT especially problematic is that their inherent complexity is not being respected, only their results. amateurish engineering: "easy machine learning in 100 lines of Python!". maybe ML tools are reasonably well-understood by the elite developers of the best organizations, but *many* users of ML treat the tools as magic and the models as binary blobs: a black box into which numbers go and decisions come out.
+what also makes ML and IoT especially problematic is that their inherent complexity is not being respected, only their results. "easy machine learning in 100 lines of Python!". *many* users of ML treat the tools as magic and the models as binary blobs: a black box into which numbers go and decisions come out.
 {{% /note %}}
 
 ---
@@ -268,7 +268,7 @@ when these geniuses decide to act, the legal remedy is likely to be ham-fisted
 
 ## "We have to do something!"
 ## "This is something"
-## "We must do it!"
+## "We must do this!"
 
 {{% note %}}
 we've seen this over and over again. look at the evergreen fights over encryption, where the government thinks they can somehow make math available only to "Good People"
@@ -388,7 +388,7 @@ And this is deeply important because we as an industry have failed to set those 
 
 {{% note %}}
 [10:00]
-consent is the *only* workable guiding model when we're talking about relationships between individual people. ex. I consent to being part of your research. You consent to engaging in conversation with me. When you decide you don't want to be in a relationship you can withdraw consent and I respect that. We *hopefully* all understand this by now?
+consent is the *only* workable guiding model when we're talking about relationships between individual people. ex. I consent to being part of your research. You consent to engaging in conversation with me. When you decide you don't want to be in a relationship you can withdraw consent and your partner respects that. We *hopefully* all understand this by now?
 {{% /note %}}
 
 ---
@@ -436,7 +436,7 @@ we talked earlier about how unexpectedly-derived data represents a side-channel 
 *https://www.google.com/search?q=externality*
 
 {{% note %}}
-we see flaws of consent at play when we look at the Uber accident. the woman who was killed didn't consent to be part of Uber's experimental driving program. she wasn't behind the wheel. what does "consent" mean when other human lives are treated as an externality? aside: are these results being manipulated? the *canonical* example is pollution! what coal industry PR team infiltrated this into Google's results?
+we see flaws of consent at play when we look at the Uber accident. the woman who was killed didn't consent to be part of Uber's experimental driving program. she wasn't behind the wheel. what does "consent" mean when other human lives are treated as an externality? aside: what coal industry PR team infiltrated this into Google's results?
 {{% /note %}}
 
 ---
@@ -444,8 +444,7 @@ we see flaws of consent at play when we look at the Uber accident. the woman who
 # foundational values?
 
 {{% note %}}
-the dynamic of community vs individual consent points to a problem defining foundational values
-(ref Bryan Cantrill's Monktober talk distinguishes between "principles" and "values"). if we can disagree on things like the balance of individual vs community (ex. EU vs US), how do we define shared values? we're not the first people to have this problem! so how do other professions solve this problem...?
+the dynamic of community vs individual consent points to a problem defining foundational values (ref Bryan Cantrill's Monktober talk distinguishes between "principles" and "values"). if we can disagree on things like the balance of individual vs community (ex. EU vs US), how do we define shared values? we're not the first people to have this problem! so how do other professions solve this problem...?
 {{% /note %}}
 
 ---
@@ -508,7 +507,7 @@ certifications do exist. we see lots and lots of useless rent-seeking certificat
 *[ref http://www.nber.org/papers/w10467.pdf](http://www.nber.org/papers/w10467.pdf)*
 
 {{% note %}}
-study by Marc Law & Sukkoo Kim of National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information asymmetry rather than creating monopoly power. consumers of our services generally don't understand what they're buying, and so professional bodies provide an answer to the question of whether the product is acceptable. professional organizations ethical requirements are typically about fair dealing and bare minimum safety guidelines.
+study by Marc Law & Sukkoo Kim of National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information asymmetry rather than creating monopoly power. consumers of our services generally don't understand what they're buying, and so professional bodies provide an answer to those questions. I'm not a doctor but I rely on the boards to tell me my doctor has met minimum standards of fair dealing, competence, and safety
 {{% /note %}}
 
 ---
@@ -516,7 +515,7 @@ study by Marc Law & Sukkoo Kim of National Bureau of Economic Research shows tha
 # gatekeeping
 
 {{% note %}}
-... so in other words they serve as gatekeepers. well, that's a little problematic isn't it? we have enough barriers to entry in our profession as it is. we still have a *lot* of work to do, but this profession is one that can help bootstrap people firmly into the middle-class. so adding new barriers like "you must have *this* degree" or "you must have this many years experience working under a licensed developer" seem like they'd work against the direction we want to take our industry, right?
+... so in other words they serve as gatekeepers. well, that's a little problematic isn't it? we have enough barriers to entry in our profession as it is. we still have a *lot* of work to do. so adding new barriers like "you must have *this* degree" or "you must have this many years experience working under a licensed developer" seem like they'd work against the direction we want to take our industry, right?
 {{% /note %}}
 
 ---
@@ -532,7 +531,7 @@ but an advantage of a professional organization's ethical framework is that it a
 # what is to be done?
 
 {{% note %}}
-[20:00]
+[15:00]
 waiting for regulation seems like a bad idea. relying on consent hasn't really worked out. professional organizations seem fraught. but waiting for "the industry" to fix it isn't working. we all, individually, are the industry. need to take individual action.
 
 ---
@@ -562,7 +561,7 @@ we can influence the community. there are activist organizations that have sprun
 *[Peter Bright, Ars Technica, 20 Jun 2018](https://arstechnica.com/tech-policy/2018/06/microsoft-staff-call-on-company-to-end-ice-contract/)*
 
 {{% note %}}
-we can influence the organization. we see Microsoft employees pushing for change in what customers their organization serves
+we can influence our organizations. we see Microsoft employees pushing for change in what customers their organization serves
 {{% /note %}}
 
 ---
@@ -644,7 +643,7 @@ but with changes at the application level, we can make this work. for example, w
 ```python
 def should_brake(road):
     if road.contains(object.HUMAN):
-        print("oh shit!")
+        log.warn("oh shit!")
         # TODO: this is causing erratic driving on false
         # positive detection. Uncomment this once we have
         # that solved. Someone should remind the field
@@ -682,7 +681,7 @@ in the case of IoT one of the options is secure boot.  you'll provide the factor
 ![Hashicorp Vault logo](img/vault.png)
 
 {{% note %}}
-this means ensuring that your organization has PKI infrastructure in place to sign the bootloader and OS. get familiar with secret stores like Hashicorp Vault to build the foundation of this infrastructure
+this means ensuring that your organization has PKI infrastructure in place to sign the bootloader and OS. getting familiar with secret stores like Hashicorp Vault to build the foundation of this infrastructure is a good practice
 {{% /note %}}
 
 ---
@@ -736,7 +735,7 @@ let's look at one ML process called Neural Net (or Convolutional NN). each of th
 https://commons.wikimedia.org/wiki/File:Iris_dataset_scatterplot.svg
 
 {{% note %}}
-iterating on the weights of those inputs allows us to extract "features" from the training inputs that result in "interesting" classifications (decisions).
+iterating on the weights of those inputs allows us to extract "features" from the training inputs that result in "interesting" classifications (decisions). this is the classic iris dataset
 {{% /note %}}
 
 ---
@@ -775,7 +774,7 @@ our entire industry has unified around our worries about statefulness. "run your
 *https://ai.google/research/pubs/pub43146*
 
 {{% note %}}
-we desperately need better tooling to design-out unexpected behaviors in ML. We have undeclared consumers, hidden "strange loops" of feedback, and entangled data dependencies. These represent a source of technical debt. and it's the worst kind of technical debt -- it's what John Allspaw and the SNAFUcatchers call "shadow debt" that's taken on unknowingly.
+we desperately need better tooling to design-out unexpected behaviors in ML. We have undeclared consumers/dependencies and hidden "strange loops" of feedback. These represent a source of technical debt. and it's the worst kind of technical debt -- it's what John Allspaw and the SNAFUcatchers call "shadow debt" that's taken on unknowingly.
 {{% /note %}}
 
 ---
@@ -791,7 +790,7 @@ we desperately need better tooling to design-out unexpected behaviors in ML. We 
 *[Martin Zinkevich (Google), Rules of Machine Learning: Best Practices for ML Engineering](https://developers.google.com/machine-learning/rules-of-ml/)*
 
 {{% note %}}
-we need to remember with any ML project that human judgement is required to connect the learned objectives to their impact with the real world -- our business, our industry, and the community as a whole
+we need to remember with any ML project that human judgement is required to connect the algorithms to their impact with the real world -- our business, our industry, and the community as a whole
 {{% /note %}}
 
 ---
@@ -799,7 +798,7 @@ we need to remember with any ML project that human judgement is required to conn
 # SQL > ML
 
 {{% note %}}
-first rule should always be: why are we choosing ML over some well-tuned SQL or other algorithm? why are we choosing to use a method with chaotic feedback mechanisms instead of something that's simple and deterministic? is this simply because of resume-driven development? imagine if you chose a web framework that had these kinds of chaotic inputs!
+first rule should always be: why are we choosing ML over some well-tuned SQL or other algorithm? why are we choosing to use a method with chaotic feedback mechanisms instead of something that's simple and deterministic? imagine explaining to your CTO why you chose a web framework that allowed for undefined behavior on hostile inputs! is this simply because of resume-driven development?
 {{% /note %}}
 
 ---
@@ -807,7 +806,7 @@ first rule should always be: why are we choosing ML over some well-tuned SQL or 
 ## models should be testable and human-interpretable
 
 {{% note %}}
-when we do choose ML, we should choose our approach with interpretability in mind. simple linear or logarithmic regression models are easier to debug, calibrate, and avoid unexpected feedback loops than models that try to optimize their own accuracy. remove unused features (which represent both technical debt and side-channel opportunities), and quantify any observed undesirable behavior and build tests for it. these pieces of technical debt all represent avenues for adversarial input
+when we do choose ML, we should choose our approach with interpretability in mind. simple linear or logarithmic regression models are easier to debug and avoid unexpected feedback loops than models that self-optimize. remove unused features. quantify any unexpected behavior and build tests for it. these behaviors are both technical debt and avenues for adversarial input
 {{% /note %}}
 
 ---
@@ -863,7 +862,7 @@ formal Agile methodologies contribute to the problem. "act ethically" doesn't ha
 *[Anne Currie, The Register, 1 Mar 2018](https://www.theregister.co.uk/2018/03/01/ethics_yeah_thats_great_but_do_they_scale/)*
 
 {{% note %}}
-leave you with this from Anne Currie at ContainerSolutions. "We aren't a craft anymore. We might feel like artisans with laptops but what we produce could potentially be in front of a signicant chunk of humanity by lunchtime."
+leave you with this from Anne Currie at ContainerSolutions. "We aren't a craft anymore. We might feel like artisans with laptops but what we produce could potentially be in front of a significant chunk of humanity by lunchtime." As Sonja said: "we hold human rights and life in our hands".
 {{% /note %}}
 
 ---
