@@ -533,15 +533,31 @@ but an advantage of a professional organization's ethical framework is that it a
 
 {{% note %}}
 [20:00]
-waiting for regulation seems like a bad idea. relying on consent hasn't really worked out. professional organizations seem fraught. but waiting for "the industry" to fix it isn't working. we all, individually, are the industry. need to take individual action:
-- influence the community
-- ex. talk about this stuff!
-- ex. what organizations do we work for?
+waiting for regulation seems like a bad idea. relying on consent hasn't really worked out. professional organizations seem fraught. but waiting for "the industry" to fix it isn't working. we all, individually, are the industry. need to take individual action.
+
+---
+
+![@containersoluti on Twitter: Very excited to announce that our conference on tech ethics @coedethics is sold out!](img/coed-ethics.png)
+
+*https://twitter.com/containersoluti/status/1016624243868667904*
+
+{{% note %}}
+we can talk about this stuff. COED:Ethics in London happening today, sponsored by the great folks at ContainerSolutions like Anne Currie and Jamie Dobson
 {{% /note %}}
 
 ---
 
-![ArsTechnica: Microsoft staff call on company to end ICE contract](img/microsoft-employees-ice.png)
+![Tech Workers Coalition: Worker Power in the Tech Industry](img/techworkerscoalition.png)
+
+*https://techworkerscoalition.org/*
+
+{{% note %}}
+we can influence the community. there are activist organizations that have sprung up in the last few years looking to push for broader change across many organizations, like the Tech Workers Coalition
+{{% /note %}}
+
+---
+
+![arstechnica: Microsoft staff call on company to end ICE contract](img/microsoft-employees-ice.png)
 
 *[Peter Bright, Ars Technica, 20 Jun 2018](https://arstechnica.com/tech-policy/2018/06/microsoft-staff-call-on-company-to-end-ice-contract/)*
 
@@ -567,17 +583,6 @@ we've seen successful protest by Googlers motivated by their conscience
 
 {{% note %}}
 and we've seen Amazon employees pushing for change
-{{% /note %}}
-
----
-
-
-![Tech Workers Coalition: Worker Power in the Tech Industry](img/techworkerscoalition.png)
-
-https://techworkerscoalition.org/
-
-{{% note %}}
-there are activist organizations that have sprung up in the last few years looking to push for broader change across many organizations, like the Tech Workers Coalition
 {{% /note %}}
 
 ---
@@ -858,7 +863,7 @@ formal Agile methodologies contribute to the problem. "act ethically" doesn't ha
 *[Anne Currie, The Register, 1 Mar 2018](https://www.theregister.co.uk/2018/03/01/ethics_yeah_thats_great_but_do_they_scale/)*
 
 {{% note %}}
-leave you with this from Anne Currie at ContainerSolutions, who are holding a conference on ethics in technology this week. "We aren't a craft anymore. We might feel like artisans with laptops but what we produce could potentially be in front of a signicant chunk of humanity by lunchtime."
+leave you with this from Anne Currie at ContainerSolutions. "We aren't a craft anymore. We might feel like artisans with laptops but what we produce could potentially be in front of a signicant chunk of humanity by lunchtime."
 {{% /note %}}
 
 ---
