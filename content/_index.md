@@ -426,7 +426,7 @@ whereas in the US we have a mixed bag where businesses (which are supposed to be
 *https://twitter.com/Millstab/status/999762424994594817*
 
 {{% note %}}
-we talked earlier about how unexpectedly-derived data represents a side-channel information leak, that makes consent nearly impossible to understand. and dark UX patterns make this worse by manipulating consent. "you agreed to this!"
+we talked earlier about how unexpectedly-derived data makes consent nearly impossible to understand. dark UX patterns make this worse by manipulating consent. "you agreed to this!"
 {{% /note %}}
 
 ---
@@ -659,7 +659,7 @@ we need to take responsibility for quality proportional to the risks involved wi
 
 ---
 
-# secure boot
+# secure by design
 
 {{% note %}}
 we need to take responsibility for having deep understanding of how the security of our systems are bootstrapped. and we need to make decisions about that aligned with our values.
@@ -862,9 +862,13 @@ formal Agile methodologies contribute to the problem. "act ethically" doesn't ha
 *[Anne Currie, The Register, 1 Mar 2018](https://www.theregister.co.uk/2018/03/01/ethics_yeah_thats_great_but_do_they_scale/)*
 
 {{% note %}}
-leave you with this from Anne Currie at ContainerSolutions. "We aren't a craft anymore. We might feel like artisans with laptops but what we produce could potentially be in front of a significant chunk of humanity by lunchtime." As Sonja said: "we hold human rights and life in our hands".
+leave you with this from Anne Currie at ContainerSolutions. "We aren't a craft anymore. We might feel like artisans with laptops but what we produce could potentially be in front of a significant chunk of humanity by lunchtime."
 {{% /note %}}
 
 ---
 
 # let's get to work
+
+{{% note %}}
+As Sonja said: "we hold human rights and life in our hands".
+{{% /note %}}
