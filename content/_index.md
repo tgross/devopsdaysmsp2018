@@ -13,7 +13,7 @@ highlight_theme = "solarized-dark"
 #### Tim Gross | Machinist Labs
 
 {{% note %}}
-My name is Tim Gross from Machinist Labs, and my talk is titled "They Didn't Stop to Think If They Should"
+I'm Tim Gross. This is my twitter handle, which seemed like a good idea at the time. "They Didn't Stop to Think If They Should"
 {{% /note %}}
 
 ---
@@ -22,13 +22,17 @@ My name is Tim Gross from Machinist Labs, and my talk is titled "They Didn't Sto
 ## Machine Learning And The Internet Of Unpatched Things
 
 {{% note %}}
-an alternate title could be...
+an alternate title could be... "Machine Learning And The Internet Of Unpatched Things"
 {{% /note %}}
 
 ---
 
 ## or...
 ## Because Eternal Vigilance is the Price of Liberty, We Have to Talk About Ethics Again
+
+{{% note %}}
+or maybe... "Because Eternal Vigilance is the Price of Liberty, We Have to Talk About Ethics Again"
+{{% /note %}}
 
 ---
 
@@ -37,7 +41,7 @@ an alternate title could be...
 > Any reference to or citation of any person or organization does not constitute or imply an endorsement or recommendation of the content of this talk. The opinions expressed in this talk are the speaker's alone and do not reflect the view of this conference, your employer, or my mom. The speaker is grossly unqualified to tell you how to live your life. Your mileage may vary. Not to be used in the manufacture of nuclear weapons. By attending this talk the speaker hereby grants you an irrevocable, perpetual, non-exclusive, transferable, worldwide license to be excellent to each other.
 
 {{% note %}}
-"Are we going to talk about the trolley dillema again? C'mon, I just want to code!" Why do we as engineers need to discuss this stuff? Who am I, anyways? basically nobody; I'm not an ethicist w/ a PhD. why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? the reason we *all* need to be talking about this because of the real world impact.
+"Is this guy gonna talk about the trolley problem? C'mon, I just want to code! And who is this guy, anyways? He's not an ethicist with a PhD!" Why do we as engineers need to discuss this stuff? And why is it especially important to talk about ethics when we start talking about ML and IoT? What makes these things special? What makes them different from other software? the reason we *all* need to be talking about this, is because as Sharon Kennedy Vickers told us yesterday: "what we do has impact"
 {{% /note %}}
 
 ---
@@ -48,7 +52,7 @@ an alternate title could be...
 
 
 {{% note %}}
-Back in March a self-driving car operated by Uber killed a pedestrian. The NTSB investigation is still ongoing, but what is clear is that the vehicle had no business being operated without direct supervision. The sensing system had lots of false positives that caused it to brake erratically. So they turned the braking system off. But apparently that message never got to the folks who'd turned off the vehicles' own automatic braking nor to the attendee of the vehicle. So the vehicle "saw" the pedestrian and did nothing.
+Back in March a self-driving car operated by Uber killed a pedestrian. The NTSB investigation is still ongoing, but what is clear is that the vehicle had no business being operated without direct supervision. The collision detection system had lots of false positives that caused it to brake erratically. So they turned the braking system off. But apparently that message never got to the folks who'd turned off the vehicles' own automatic braking nor to the attendee of the vehicle. So the vehicle "saw" the pedestrian and did nothing.
 {{% /note %}}
 
 ---
@@ -68,7 +72,7 @@ A couple years ago, MSFT demonstrated their ML capabilities with the Tay chatbot
 *[Russell Brandom, The Verge, 12 May 2017](https://www.theverge.com/2017/5/12/15630354/nhs-hospitals-ransomware-hack-wannacry-bitcoin)*
 
 {{% note %}}
-in an IoT example, last year countless devices in UK hospitals were taken over by Wannacry ransomware. patient lives were put at risk not just because of poor patch hygiene but because of the design flaws that allowed access to the devices in the first place and because of warped incentives in the government programs that produced the stolen malware in the first place.
+in an IoT example, last year countless devices in UK hospitals were taken over by Wannacry ransomware. patient lives were put at risk not just because of poor patch hygiene but because of the architectural flaws and because of warped incentives in the US government program that produced the malware in the first place.
 {{% /note %}}
 
 ---
@@ -88,7 +92,7 @@ Tesla's autopilot has been implicated in the deaths of several drivers at this p
 *[Kashmir Hill, Forbes, 16 Feb 2012](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/)*
 
 {{% note %}}
-Machine learning algorithms may know more about us and our loved ones than we do ourselves. Target was able to determine from customer purchases not just when customers are pregnant but at what stage of their pregnancy they were (buying unscented products during late stages, for example).
+You didn't think I was going to leave the home team out? Machine learning algorithms may know more about us and our loved ones than we do ourselves. Target was able to determine from customer purchases not just when customers are pregnant but at what stage of their pregnancy they were (buying unscented products during late stages, for example).
 {{% /note %}}
 
 ---
@@ -125,7 +129,7 @@ we've invited these systems into our homes... (and ok, yeah this is funny)
 ![@polotek on Twitter: "Kalanick keeps asking for unethical/illegal things, but at some point we have to talk about how engineers at Uber keep saying yes."](img/marco-rogers.png)
 
 {{% note %}}
-what all these stories have in common is that like any other failure there's almost certainly no "root cause"; it's unlikely that anyone at these companies set out with awful intentions. It's a complex combination of socio-technical systems and the incentives they set up. But at the end of the day, it's people in our industry -- the people in this room -- who are the ones who execute and implement these systems
+what all these stories have in common is that like any other failure there's almost certainly no "root cause". these failures are the result of complex sociotechnical systems and the incentives they set up. it's unlikely that anyone at these companies set out with awful intentions. But as Lanice Sims told us yesterday, your intentions ain't shit. at the end of the day, it's people in our industry -- the people in this room -- who are the ones who execute and implement these systems
 {{% /note %}}
 
 ---
@@ -133,7 +137,7 @@ what all these stories have in common is that like any other failure there's alm
 # a problem of scale
 
 {{% note %}}
-the problem isn't just that these systems all have serious real-world consequences; we can look at the Therac-25 accidents in the 80's for examples of that. the problem is that those consequences are multiplied by the scale of these systems.
+the problem isn't just that these systems all have real-world consequences; software always has. we can go back to the 80's and look at the Therac-25 accidents, where software flaws in radiation machines killed 3 people. the problem is that those consequences are multiplied by the scale of these systems.
 {{% /note %}}
 
 ---
@@ -163,7 +167,7 @@ but the scope of machine learning and IoT is incomprehensible to ordinary users.
 {{% fragment %}}!["in X lines of Python"](img/in_X_lines_07.png){{% /fragment %}}
 
 {{% note %}}
-what also makes ML and IoT especially problematic is that their inherent complexity is not being respected, only their results. "easy machine learning in 100 lines of Python!". *many* users of ML treat the tools as magic and the models as binary blobs: a black box into which numbers go and decisions come out.
+what also makes ML especially problematic is that its inherent complexity is not being respected, only its results. "easy machine learning in 100 lines of Python!". *many* users of ML treat the tools as magic and the models as binary blobs: a black box into which numbers go and decisions come out.
 {{% /note %}}
 
 ---
@@ -204,7 +208,7 @@ what happens when a banana looks, not like a toaster, but a bomb or weapon? when
 *[Kimberly Mok, The New Stack, 14 Sep 2017](https://thenewstack.io/camouflaged-graffiti-road-signs-can-fool-machine-learning-models/)*
 
 {{% note %}}
-the flaws of self-driving vehicles and the organizations operating them seem terrifying enough without adding adversarial environments into the mix
+the flaws of self-driving vehicles and the organizations operating them seem terrifying enough without adding adversarial environments into the mix. this is unremarkable graffiti...
 {{% /note %}}
 
 ---
@@ -214,7 +218,7 @@ the flaws of self-driving vehicles and the organizations operating them seem ter
 *[Kimberly Mok, The New Stack, 14 Sep 2017](https://thenewstack.io/camouflaged-graffiti-road-signs-can-fool-machine-learning-models/)*
 
 {{% note %}}
-these attacks are unreasonably effective! unremarkable graffiti was used to confuse a ML algorithm *100%* of the time
+but it was used to confuse a machine vision algorithm *100%* of the time. these attacks are unreasonably effective!
 {{% /note %}}
 
 ---
@@ -222,7 +226,7 @@ these attacks are unreasonably effective! unremarkable graffiti was used to conf
 ## embedded industry stuck in archaic threat model
 
 {{% note %}}
-if you thought the enterprise was bad they're still shipping devices with shared private keys and hard-coded passwords. we used to say things like "well if you have physical possession then it's game over" but that's *always* the case with IoT devices. But we have answer to that: "secure boot" using TPM to sign the bootloader and OS updates (without which any device can be rooted). But this is treated as an expensive add-on rather than the default
+embedded industry stuck in archaic threat model. they're still shipping devices with shared private keys and hard-coded passwords. we used to say things like "well if you have physical possession then it's game over" but that's *always* the case with IoT devices. But we have answer to that: "secure boot" using TPM to sign the bootloader and OS updates. But this is treated as an expensive add-on rather than the default
 {{% /note %}}
 
 ---
@@ -261,7 +265,7 @@ the problem with our complacency on this as an industry is that it invites someo
 *https://www.brookings.edu/wp-content/uploads/2016/06/congress006-1.jpg*
 
 {{% note %}}
-when these geniuses decide to act, the legal remedy is likely to be ham-fisted
+like these geniuses. and when they decide to act, the legal remedy is likely to be ham-fisted
 {{% /note %}}
 
 ---
@@ -281,7 +285,7 @@ we've seen this over and over again. look at the evergreen fights over encryptio
 *https://imgur.com/gallery/2mIObIu*
 
 {{% note %}}
-This is particularly a problem here in the US where virtually all our lawmakers are incompetent...
+This is particularly a problem here in the US where virtually *all* our lawmakers at the federal level are either incompetent...
 {{% /note %}}
 
 ---
@@ -369,7 +373,7 @@ if you can't do your job to protect the privacy of users and have to close up sh
 *[Simon Sharwood, The Register, 30 May 2018](https://www.theregister.co.uk/2018/05/30/salesforce_q1_2019/?)*
 
 {{% note %}}
-But my point is it doesn't have to be that way. In this interview with Marc Benioff he points out this can be good for our industry. It'll "set the guardrails"
+It doesn't have to be that way. In this interview with Marc Benioff he points out this can be good for our industry. It'll "set the guardrails"
 {{% /note %}}
 
 ---
@@ -454,7 +458,7 @@ the dynamic of community vs individual consent points to a problem defining foun
 *https://twitter.com/soniagupta504/status/1011591288003575808*
 
 {{% note %}}
-Sonia (who was up here on stage last night): "Lawyers and doctors enter their professions knowing, from the outset, just how heavy their burdens are. They hold human rights and life in their hands."
+Sonia Gupta (who was up here on stage last night): "Lawyers and doctors enter their professions knowing, from the outset, just how heavy their burdens are. They hold human rights and life in their hands."
 {{% /note %}}
 
 ---
@@ -489,7 +493,7 @@ this is the basis of professional ethics
 # self-regulation
 
 {{% note %}}
-historically licensing and professional organizations (ex. AMA, AIA, ASME, bar associations) have arisen from the professions themselves rather than being imposed clumsily from the outside. government licensing requirements are typically delegated to the professional organizations
+historically licensing and professional organizations (ex. AMA, AIA, ASME, bar associations) have arisen from the professions themselves rather than being imposed clumsily from the outside. they've asked for the protection of regulation. government licensing requirements are typically delegated to the professional organizations
 {{% /note %}}
 
 ---
@@ -507,7 +511,7 @@ certifications do exist. we see lots and lots of useless rent-seeking certificat
 *[ref http://www.nber.org/papers/w10467.pdf](http://www.nber.org/papers/w10467.pdf)*
 
 {{% note %}}
-study by Marc Law & Sukkoo Kim of National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information asymmetry rather than creating monopoly power. consumers of our services generally don't understand what they're buying, and so professional bodies provide an answer to those questions. I'm not a doctor but I rely on the boards to tell me my doctor has met minimum standards of fair dealing, competence, and safety
+study from the National Bureau of Economic Research shows that professional organizations have acted mostly as a counter to information asymmetry rather than creating monopoly power. consumers of our services generally don't understand what they're buying, and so professional bodies provide an answer to those questions. I'm not a doctor but I rely on the boards to tell me my doctor has met minimum standards of fair dealing, competence, and safety
 {{% /note %}}
 
 ---
@@ -589,7 +593,7 @@ and we've seen Amazon employees pushing for change
 # what about...?
 
 {{% note %}}
-"whataboutism": because we have a restricted set of common values, it isn't constructive to see e.g. Microsoftees protesting ICE but then turn around and say "what about their military contracts?" or "what about that time when MSFT's CEO from 17 years ago said meanie-head things about open source?" This is not helpful.
+"whataboutism": because we have a restricted set of common values, it isn't constructive to see e.g. Microsoftees protesting ICE but then turn around and say "what about their military contracts?" or "what about that time when MSFT's CEO from 17 years ago said meanie-head things about open source?" This is not helpful. At least they're doing something instead of snarking about it on twitter
 {{% /note %}}
 
 ---
@@ -605,7 +609,7 @@ the labor market for our profession gives us enormous power right now. we can pu
 # ensure your own mask is secure
 
 {{% note %}}
-that being said, we should also cut each other some slack. you don't know much about the circumstances of any particular person. so while we should be holding each other to task, individuals need to make their own decisions about where they work and that doesn't make them The Enemy. (unless they work at Palantir, just sayin')
+that being said, we should also cut each other some slack. you don't know much about the circumstances of any particular person (do they have health problems? family to take care of?). so while we should be holding each other to task, individuals need to make their own decisions about where they work and that doesn't make them The Enemy. (unless they work at Palantir, just sayin')
 {{% /note %}}
 
 ---
@@ -654,7 +658,7 @@ def should_brake(road):
 ```
 
 {{% note %}}
-we need to take responsibility for quality proportional to the risks involved with the software. certainly this is obvious in directly-life-impacting software like self-driving cars. we need to be part of the chain of safety around these systems.
+we need to take responsibility for quality proportional to the risks involved with the software. certainly this is obvious in directly-life-impacting software like self-driving cars, but it extends to every piece of software with real world impact. we need to be part of the chain of safety around these systems.
 {{% /note %}}
 
 ---
@@ -852,7 +856,7 @@ we can't rely on project managers or business analysts to take the lead on desig
 {{% fragment %}}![cartoon punching a clock with a JIRA ticket](img/jira-clock-puncher.png){{% /fragment %}}
 
 {{% note %}}
-formal Agile methodologies contribute to the problem. "act ethically" doesn't have any story points in this epic. But you're supposed to be a professional, not a JIRA clock puncher. act like it!
+formal Agile methodologies contribute to the problem. "act ethically" doesn't have any story points in this epic. But you're not a assembly line worker punching out JIRA tickets, you're a professional engineer! act like it!
 {{% /note %}}
 
 ---
@@ -870,5 +874,5 @@ leave you with this from Anne Currie at ContainerSolutions. "We aren't a craft a
 # let's get to work
 
 {{% note %}}
-As Sonja said: "we hold human rights and life in our hands".
+what we do has impact. let's get to work. thanks, folks!
 {{% /note %}}
