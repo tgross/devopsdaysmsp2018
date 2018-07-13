@@ -102,7 +102,7 @@ You didn't think I was going to leave the home team out? Machine learning algori
 *[Jana Kasperkevic, The Guardian, 1 Jul 2015](https://www.theguardian.com/technology/2015/jul/01/google-sorry-racist-auto-tag-photo-app)*
 
 {{% note %}}
-ML is encoding our biases. (This one was so bad that I cropped it out of this picture.)
+ML is encoding our biases. Not just dehumanizing people online, but we saw yesterday how it can reinforce structures of power and privilege: access to mortgages, sentencing guidelines
 {{% /note %}}
 
 ---
